@@ -14,9 +14,16 @@
 		374D9F0922C1AD9C001A7ECA /* JoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0822C1AD9C001A7ECA /* JoinVC.swift */; };
 		374D9F0B22C1ADBD001A7ECA /* MyResumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0A22C1ADBD001A7ECA /* MyResumeVC.swift */; };
 		374D9F0D22C1ADDE001A7ECA /* LikeResumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0C22C1ADDE001A7ECA /* LikeResumeVC.swift */; };
-		374D9F0F22C1BB2C001A7ECA /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0E22C1BB2C001A7ECA /* Shape.swift */; };
+		374D9F0F22C1BB2C001A7ECA /* ShapeAndColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0E22C1BB2C001A7ECA /* ShapeAndColor.swift */; };
 		374D9F1122C1DF7D001A7ECA /* DetailResumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F1022C1DF7D001A7ECA /* DetailResumeVC.swift */; };
 		374D9F1722C1EC47001A7ECA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F1622C1EC47001A7ECA /* TabBarViewController.swift */; };
+		374D9F2622C616C5001A7ECA /* AddCareerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2522C616C5001A7ECA /* AddCareerView.swift */; };
+		374D9F2822C61B31001A7ECA /* MoreInfomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2722C61B31001A7ECA /* MoreInfomation.swift */; };
+		374D9F2A22C62A6D001A7ECA /* ViewArrayInStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2922C62A6D001A7ECA /* ViewArrayInStackView.swift */; };
+		374D9F2C22C62AE7001A7ECA /* AddAcademicBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2B22C62AE7001A7ECA /* AddAcademicBackgroundView.swift */; };
+		374D9F2E22C62B47001A7ECA /* AddPrizeAndOthersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2D22C62B47001A7ECA /* AddPrizeAndOthersView.swift */; };
+		374D9F3022C62B67001A7ECA /* AddForeignLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2F22C62B67001A7ECA /* AddForeignLanguageView.swift */; };
+		374D9F3222C62B89001A7ECA /* AddLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F3122C62B89001A7ECA /* AddLinkView.swift */; };
 		3778737422BFC61B009488C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778737322BFC61B009488C6 /* AppDelegate.swift */; };
 		3778737922BFC61B009488C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3778737722BFC61B009488C6 /* Main.storyboard */; };
 		3778737B22BFC61D009488C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3778737A22BFC61D009488C6 /* Assets.xcassets */; };
@@ -46,9 +53,16 @@
 		374D9F0822C1AD9C001A7ECA /* JoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinVC.swift; sourceTree = "<group>"; };
 		374D9F0A22C1ADBD001A7ECA /* MyResumeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyResumeVC.swift; sourceTree = "<group>"; };
 		374D9F0C22C1ADDE001A7ECA /* LikeResumeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeResumeVC.swift; sourceTree = "<group>"; };
-		374D9F0E22C1BB2C001A7ECA /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		374D9F0E22C1BB2C001A7ECA /* ShapeAndColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeAndColor.swift; sourceTree = "<group>"; };
 		374D9F1022C1DF7D001A7ECA /* DetailResumeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResumeVC.swift; sourceTree = "<group>"; };
 		374D9F1622C1EC47001A7ECA /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		374D9F2522C616C5001A7ECA /* AddCareerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCareerView.swift; sourceTree = "<group>"; };
+		374D9F2722C61B31001A7ECA /* MoreInfomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfomation.swift; sourceTree = "<group>"; };
+		374D9F2922C62A6D001A7ECA /* ViewArrayInStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewArrayInStackView.swift; sourceTree = "<group>"; };
+		374D9F2B22C62AE7001A7ECA /* AddAcademicBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAcademicBackgroundView.swift; sourceTree = "<group>"; };
+		374D9F2D22C62B47001A7ECA /* AddPrizeAndOthersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPrizeAndOthersView.swift; sourceTree = "<group>"; };
+		374D9F2F22C62B67001A7ECA /* AddForeignLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddForeignLanguageView.swift; sourceTree = "<group>"; };
+		374D9F3122C62B89001A7ECA /* AddLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLinkView.swift; sourceTree = "<group>"; };
 		3778737022BFC61B009488C6 /* RyujumeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RyujumeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3778737322BFC61B009488C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3778737822BFC61B009488C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,7 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				374D9EE822C19889001A7ECA /* Base.swift */,
-				374D9F0E22C1BB2C001A7ECA /* Shape.swift */,
+				374D9F0E22C1BB2C001A7ECA /* ShapeAndColor.swift */,
+				374D9F2722C61B31001A7ECA /* MoreInfomation.swift */,
+				374D9F2922C62A6D001A7ECA /* ViewArrayInStackView.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -141,6 +157,11 @@
 		374D9F1C22C31677001A7ECA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				374D9F2522C616C5001A7ECA /* AddCareerView.swift */,
+				374D9F2B22C62AE7001A7ECA /* AddAcademicBackgroundView.swift */,
+				374D9F2D22C62B47001A7ECA /* AddPrizeAndOthersView.swift */,
+				374D9F2F22C62B67001A7ECA /* AddForeignLanguageView.swift */,
+				374D9F3122C62B89001A7ECA /* AddLinkView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -381,6 +402,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				374D9F1122C1DF7D001A7ECA /* DetailResumeVC.swift in Sources */,
+				374D9F2C22C62AE7001A7ECA /* AddAcademicBackgroundView.swift in Sources */,
+				374D9F2822C61B31001A7ECA /* MoreInfomation.swift in Sources */,
 				374D9F0D22C1ADDE001A7ECA /* LikeResumeVC.swift in Sources */,
 				374D9F0B22C1ADBD001A7ECA /* MyResumeVC.swift in Sources */,
 				374D9EE922C19889001A7ECA /* Base.swift in Sources */,
@@ -388,8 +411,13 @@
 				374D9F0722C1AD92001A7ECA /* LoginVC.swift in Sources */,
 				3778737422BFC61B009488C6 /* AppDelegate.swift in Sources */,
 				374D9F0922C1AD9C001A7ECA /* JoinVC.swift in Sources */,
+				374D9F3022C62B67001A7ECA /* AddForeignLanguageView.swift in Sources */,
+				374D9F2622C616C5001A7ECA /* AddCareerView.swift in Sources */,
+				374D9F3222C62B89001A7ECA /* AddLinkView.swift in Sources */,
+				374D9F2A22C62A6D001A7ECA /* ViewArrayInStackView.swift in Sources */,
 				374D9F1722C1EC47001A7ECA /* TabBarViewController.swift in Sources */,
-				374D9F0F22C1BB2C001A7ECA /* Shape.swift in Sources */,
+				374D9F2E22C62B47001A7ECA /* AddPrizeAndOthersView.swift in Sources */,
+				374D9F0F22C1BB2C001A7ECA /* ShapeAndColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
