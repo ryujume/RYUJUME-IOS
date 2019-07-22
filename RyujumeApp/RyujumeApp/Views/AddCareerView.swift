@@ -13,11 +13,11 @@ class AddCareerView: UIView {
     
     let companyTxtField = HoshiTextField()
     let deleteBtn = UIButton()
-    let startDateLbl = UILabel()
+    let startDateBtn = UIButton()
     let dashLbl = UILabel()
-    let endDateLbl = UILabel()
-    let isworkingLbl = UILabel()
-    let isworkingBtn = UIButton()
+    let endDateBtn = UIButton()
+    let isWorkingLbl = UILabel()
+    let isWorkingBtn = UIButton()
     
     func configureView(addStackView: UIStackView){
         
@@ -25,86 +25,88 @@ class AddCareerView: UIView {
         self.translatesAutoresizingMaskIntoConstraints = false
         
         companyTxtField.placeholder = "회사명"
-        companyTxtField.minimumFontSize = 8
+        companyTxtField.adjustsFontSizeToFitWidth = true
+        companyTxtField.font = UIFont.appMidiumFontWith(size: (companyTxtField.font?.pointSize ?? 0) - 3)
         companyTxtField.borderActiveColor = Color.getColor(.main3)()
         companyTxtField.borderInactiveColor = Color.getColor(.main1)()
-        companyTxtField.adjustsFontSizeToFitWidth = true
         companyTxtField.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(companyTxtField)
         
         deleteBtn.setTitle("삭제", for: .normal)
-        deleteBtn.titleLabel?.font.withSize(8)
-        deleteBtn.titleLabel?.minimumScaleFactor = 1
         deleteBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        deleteBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize)
         deleteBtn.setTitleColor(UIColor.blue, for: .normal)
         deleteBtn.translatesAutoresizingMaskIntoConstraints = false
+        deleteBtn.addTarget(self, action: #selector(tapedDeleteBtn), for: .touchUpInside)
         self.addSubview(deleteBtn)
         
-        startDateLbl.text = "YYYY.MM"
-        startDateLbl.font.withSize(12)
-        startDateLbl.minimumScaleFactor = 1
-        startDateLbl.adjustsFontSizeToFitWidth = true
-        startDateLbl.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(startDateLbl)
+        startDateBtn.setTitle("시작일", for: .normal)
+        startDateBtn.setTitleColor(UIColor.darkText, for: .normal)
+        startDateBtn.tag = 0
+        startDateBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        startDateBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 3)
+        startDateBtn.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.addSubview(startDateBtn)
         
         dashLbl.text = "-"
-        dashLbl.font.withSize(12)
-        dashLbl.minimumScaleFactor = 1
         dashLbl.adjustsFontSizeToFitWidth = true
+        dashLbl.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 5)
         dashLbl.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(dashLbl)
         
-        endDateLbl.text = "YYYY.MM"
-        endDateLbl.font.withSize(12)
-        endDateLbl.minimumScaleFactor = 1
-        endDateLbl.adjustsFontSizeToFitWidth = true
-        endDateLbl.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(endDateLbl)
+        endDateBtn.setTitle("마지막일", for: .normal)
+        endDateBtn.setTitleColor(UIColor.darkText, for: .normal)
+        endDateBtn.tag = 1
+        endDateBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        endDateBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 3)
+        endDateBtn.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(endDateBtn)
         
-        isworkingLbl.text = "재직중인가요?"
-        isworkingLbl.font.withSize(12)
-        isworkingLbl.minimumScaleFactor = 1
-        isworkingLbl.adjustsFontSizeToFitWidth = true
-        isworkingLbl.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(isworkingLbl)
+        isWorkingLbl.text = "재직중인가요?"
+        isWorkingLbl.adjustsFontSizeToFitWidth = true
+        isWorkingLbl.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 5)
+        isWorkingLbl.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(isWorkingLbl)
         
-        isworkingBtn.setTitle("O", for: .normal)
-        isworkingBtn.titleLabel?.font.withSize(8)
-        isworkingBtn.titleLabel?.minimumScaleFactor = 1
-        isworkingBtn.titleLabel?.adjustsFontSizeToFitWidth = true
-        isworkingBtn.setTitleColor(UIColor.blue, for: .normal)
-        isworkingBtn.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(isworkingBtn)
+        isWorkingBtn.setTitle("X", for: .normal)
+        isWorkingBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        isWorkingBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 5)
+        isWorkingBtn.setTitleColor(UIColor.blue, for: .normal)
+        isWorkingBtn.translatesAutoresizingMaskIntoConstraints = false
+        isWorkingBtn.addTarget(self, action: #selector(tapedStateBtn), for: .touchUpInside)
+        self.addSubview(isWorkingBtn)
         
         self.widthAnchor.constraint(equalToConstant: addStackView.frame.width).isActive = true
         
-        companyTxtField.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
+        companyTxtField.topAnchor.constraint(equalTo: self.topAnchor, constant: 5).isActive = true
         companyTxtField.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-        companyTxtField.widthAnchor.constraint(equalTo: companyTxtField.heightAnchor, multiplier: 6).isActive = true
+        companyTxtField.widthAnchor.constraint(greaterThanOrEqualToConstant: 20).isActive = true
         
-        deleteBtn.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
+        deleteBtn.topAnchor.constraint(equalTo: self.topAnchor, constant: 2).isActive = true
         deleteBtn.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10).isActive = true
         deleteBtn.widthAnchor.constraint(equalToConstant: 20).isActive = true
         deleteBtn.heightAnchor.constraint(equalTo: deleteBtn.widthAnchor).isActive = true
         
-        endDateLbl.trailingAnchor.constraint(equalTo: deleteBtn.trailingAnchor).isActive = true
-        endDateLbl.topAnchor.constraint(equalTo: deleteBtn.bottomAnchor, constant: 10).isActive = true
+        endDateBtn.trailingAnchor.constraint(equalTo: deleteBtn.trailingAnchor).isActive = true
+        endDateBtn.topAnchor.constraint(equalTo: deleteBtn.bottomAnchor, constant: 2).isActive = true
         
-        dashLbl.trailingAnchor.constraint(equalTo: endDateLbl.leadingAnchor, constant: -5).isActive = true
-        dashLbl.centerYAnchor.constraint(equalTo: endDateLbl.centerYAnchor).isActive = true
+        dashLbl.trailingAnchor.constraint(equalTo: endDateBtn.leadingAnchor, constant: -5).isActive = true
+        dashLbl.centerYAnchor.constraint(equalTo: endDateBtn.centerYAnchor).isActive = true
         
-        startDateLbl.trailingAnchor.constraint(equalTo: dashLbl.leadingAnchor, constant: -5).isActive = true
-        startDateLbl.centerYAnchor.constraint(equalTo: dashLbl.centerYAnchor).isActive = true
+        startDateBtn.trailingAnchor.constraint(equalTo: dashLbl.leadingAnchor, constant: -5).isActive = true
+        startDateBtn.centerYAnchor.constraint(equalTo: dashLbl.centerYAnchor).isActive = true
         
-        isworkingBtn.trailingAnchor.constraint(equalTo: endDateLbl.trailingAnchor).isActive = true
-        isworkingBtn.topAnchor.constraint(equalTo: endDateLbl.bottomAnchor, constant: 20).isActive = true
-        isworkingBtn.widthAnchor.constraint(equalToConstant: 20).isActive = true
-        isworkingBtn.heightAnchor.constraint(equalTo: deleteBtn.widthAnchor).isActive = true
+        isWorkingBtn.trailingAnchor.constraint(equalTo: endDateBtn.trailingAnchor, constant: 10).isActive = true
+        isWorkingBtn.topAnchor.constraint(equalTo: endDateBtn.bottomAnchor, constant: 2).isActive = true
         
-        isworkingLbl.trailingAnchor.constraint(equalTo: isworkingBtn.leadingAnchor, constant: -5).isActive = true
-        isworkingLbl.centerYAnchor.constraint(equalTo: isworkingBtn.centerYAnchor).isActive = true
+        isWorkingLbl.trailingAnchor.constraint(equalTo: isWorkingBtn.leadingAnchor).isActive = true
+        isWorkingLbl.centerYAnchor.constraint(equalTo: isWorkingBtn.centerYAnchor).isActive = true
         
-        self.bottomAnchor.constraint(equalTo: isworkingBtn.bottomAnchor).isActive = true
+        companyTxtField.bottomAnchor.constraint(equalTo: endDateBtn.bottomAnchor).isActive = true
+        companyTxtField.trailingAnchor.constraint(lessThanOrEqualTo: startDateBtn.leadingAnchor).isActive = true
+        
+        self.bottomAnchor.constraint(equalTo: isWorkingBtn.bottomAnchor).isActive = true
     }
     
 }
