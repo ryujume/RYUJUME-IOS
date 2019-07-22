@@ -1,5 +1,5 @@
 //
-//  AddForeignLanguage.swift
+//  AddForeignLanguageView.swift
 //  RyujumeApp
 //
 //  Created by baby1234 on 28/06/2019.
@@ -7,105 +7,62 @@
 //
 
 import UIKit
+import TextFieldEffects
 
 class AddForeignLanguageView: UIView {
-
-    let companyTxtField = UITextField()
-    let departmentAndDutyTxtField = UITextField()
+    
+    let LanguageTxtField = HoshiTextField()
     let deleteBtn = UIButton()
-    let startDateLbl = UILabel()
-    let dashLbl = UILabel()
-    let endDateLbl = UILabel()
-    let isworkingLbl = UILabel()
-    let isworkingBtn = UIButton()
+    let levelBtn = UIButton()
     
     func configureView(addStackView: UIStackView){
         
         self.backgroundColor = UIColor.white
         self.translatesAutoresizingMaskIntoConstraints = false
         
-        companyTxtField.placeholder = "회사명"
-        companyTxtField.minimumFontSize = 8
-        companyTxtField.adjustsFontSizeToFitWidth = true
-        companyTxtField.borderStyle = .roundedRect
-        companyTxtField.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(companyTxtField)
+        LanguageTxtField.placeholder = "언어"
+        LanguageTxtField.adjustsFontSizeToFitWidth = true
+        LanguageTxtField.font = UIFont.appMidiumFontWith(size: (LanguageTxtField.font?.pointSize ?? 0) - 3)
+        LanguageTxtField.borderActiveColor = Color.getColor(.main3)()
+        LanguageTxtField.borderInactiveColor = Color.getColor(.main1)()
+        LanguageTxtField.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(LanguageTxtField)
         
         deleteBtn.setTitle("삭제", for: .normal)
-        deleteBtn.titleLabel?.font.withSize(8)
-        deleteBtn.titleLabel?.minimumScaleFactor = 1
         deleteBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        deleteBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize)
         deleteBtn.setTitleColor(UIColor.blue, for: .normal)
         deleteBtn.translatesAutoresizingMaskIntoConstraints = false
+        deleteBtn.addTarget(self, action: #selector(tapedDeleteBtn), for: .touchUpInside)
         self.addSubview(deleteBtn)
         
-        startDateLbl.text = "YYYY.MM"
-        startDateLbl.font.withSize(12)
-        startDateLbl.minimumScaleFactor = 1
-        startDateLbl.adjustsFontSizeToFitWidth = true
-        startDateLbl.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(startDateLbl)
-        
-        dashLbl.text = "-"
-        dashLbl.font.withSize(12)
-        dashLbl.minimumScaleFactor = 1
-        dashLbl.adjustsFontSizeToFitWidth = true
-        dashLbl.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(dashLbl)
-        
-        endDateLbl.text = "YYYY.MM"
-        endDateLbl.font.withSize(12)
-        endDateLbl.minimumScaleFactor = 1
-        endDateLbl.adjustsFontSizeToFitWidth = true
-        endDateLbl.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(endDateLbl)
-        
-        isworkingLbl.text = "재직중인가요?"
-        isworkingLbl.font.withSize(12)
-        isworkingLbl.minimumScaleFactor = 1
-        isworkingLbl.adjustsFontSizeToFitWidth = true
-        isworkingLbl.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(isworkingLbl)
-        
-        isworkingBtn.setTitle("O", for: .normal)
-        isworkingBtn.titleLabel?.font.withSize(8)
-        isworkingBtn.titleLabel?.minimumScaleFactor = 1
-        isworkingBtn.titleLabel?.adjustsFontSizeToFitWidth = true
-        isworkingBtn.setTitleColor(UIColor.blue, for: .normal)
-        isworkingBtn.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(isworkingBtn)
+        levelBtn.setTitle("수준", for: .normal)
+        levelBtn.setTitleColor(UIColor.darkText, for: .normal)
+        levelBtn.tag = 3
+        levelBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        levelBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 3)
+        levelBtn.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(levelBtn)
         
         self.widthAnchor.constraint(equalToConstant: addStackView.frame.width).isActive = true
         
-        companyTxtField.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
-        companyTxtField.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-        companyTxtField.widthAnchor.constraint(equalTo: companyTxtField.heightAnchor, multiplier: 6).isActive = true
+        LanguageTxtField.topAnchor.constraint(equalTo: self.topAnchor, constant: 5).isActive = true
+        LanguageTxtField.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        LanguageTxtField.widthAnchor.constraint(greaterThanOrEqualToConstant: 20).isActive = true
+        LanguageTxtField.heightAnchor.constraint(greaterThanOrEqualToConstant: 40).isActive = true
         
-        departmentAndDutyTxtField.topAnchor.constraint(equalTo: companyTxtField.bottomAnchor, constant: 5).isActive = true
-        departmentAndDutyTxtField.leadingAnchor.constraint(equalTo: companyTxtField.leadingAnchor).isActive = true
-        departmentAndDutyTxtField.widthAnchor.constraint(equalTo: departmentAndDutyTxtField.heightAnchor, multiplier: 6).isActive = true
-        
-        deleteBtn.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
-        deleteBtn.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 10).isActive = true
+        deleteBtn.topAnchor.constraint(equalTo: self.topAnchor, constant: 2).isActive = true
+        deleteBtn.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10).isActive = true
         deleteBtn.widthAnchor.constraint(equalToConstant: 20).isActive = true
         deleteBtn.heightAnchor.constraint(equalTo: deleteBtn.widthAnchor).isActive = true
         
-        endDateLbl.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 10).isActive = true
-        endDateLbl.topAnchor.constraint(equalTo: deleteBtn.bottomAnchor, constant: 10).isActive = true
+        levelBtn.leadingAnchor.constraint(equalTo: LanguageTxtField.leadingAnchor).isActive = true
+        levelBtn.topAnchor.constraint(equalTo: LanguageTxtField.bottomAnchor, constant: 2).isActive = true
         
-        dashLbl.trailingAnchor.constraint(equalTo: endDateLbl.leadingAnchor, constant: -5).isActive = true
-        dashLbl.centerYAnchor.constraint(equalTo: endDateLbl.centerYAnchor).isActive = true
+        LanguageTxtField.trailingAnchor.constraint(lessThanOrEqualTo: self.trailingAnchor).isActive = true
         
-        startDateLbl.trailingAnchor.constraint(equalTo: dashLbl.leadingAnchor, constant: -5).isActive = true
-        startDateLbl.centerYAnchor.constraint(equalTo: dashLbl.centerYAnchor).isActive = true
-        
-        isworkingBtn.trailingAnchor.constraint(equalTo: endDateLbl.trailingAnchor).isActive = true
-        isworkingBtn.topAnchor.constraint(equalTo: endDateLbl.bottomAnchor, constant: 20).isActive = true
-        
-        isworkingLbl.trailingAnchor.constraint(equalTo: isworkingBtn.leadingAnchor, constant: -5).isActive = true
-        isworkingLbl.centerYAnchor.constraint(equalTo: isworkingBtn.centerYAnchor).isActive = true
-        
-        self.bottomAnchor.constraint(equalTo: isworkingBtn.bottomAnchor).isActive = true
+        self.bottomAnchor.constraint(equalTo: levelBtn.bottomAnchor).isActive = true
     }
-
+    
 }
+
