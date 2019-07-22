@@ -60,7 +60,7 @@
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGV-Uf-TDi">
-                                                    <rect key="frame" x="71" y="10" width="42.5" height="20"/>
+                                                    <rect key="frame" x="69" y="10" width="46.5" height="20"/>
                                                     <fontDescription key="fontDescription" name="S-CoreDream-6Bold" family="S-Core Dream" pointSize="17"/>
                                                     <color key="textColor" red="1" green="0.57254901960000004" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -172,7 +172,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="간단한 자기소개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wb0-ZN-hRa">
-                                                <rect key="frame" x="20" y="139" width="119.5" height="20"/>
+                                                <rect key="frame" x="20" y="139" width="108" height="20"/>
                                                 <fontDescription key="fontDescription" name="S-CoreDream-5Medium" family="S-Core Dream" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -191,7 +191,7 @@
                                                 <rect key="frame" x="20" y="293.5" width="374" height="48"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="경력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYd-h7-zba">
-                                                        <rect key="frame" x="0.0" y="0.0" width="33" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="S-CoreDream-5Medium" family="S-Core Dream" pointSize="17"/>
                                                         <color key="textColor" red="0.96862745100000003" green="0.4039215686" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -206,7 +206,7 @@
                                                         <rect key="frame" x="0.0" y="30.5" width="374" height="17.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기재안함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUQ-Bc-fnG">
-                                                                <rect key="frame" x="0.0" y="0.0" width="58" height="17.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="52" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="S-CoreDream-3Light" family="S-Core Dream" pointSize="15"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -231,7 +231,7 @@
                                                 <rect key="frame" x="20" y="361.5" width="374" height="48"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="학력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRV-Tl-4Le">
-                                                        <rect key="frame" x="0.0" y="0.0" width="33" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="S-CoreDream-5Medium" family="S-Core Dream" pointSize="17"/>
                                                         <color key="textColor" red="0.96862745100000003" green="0.4039215686" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -246,7 +246,7 @@
                                                         <rect key="frame" x="0.0" y="30.5" width="374" height="17.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기재안함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QH-59-SoB">
-                                                                <rect key="frame" x="0.0" y="0.0" width="58" height="17.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="52" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="S-CoreDream-3Light" family="S-Core Dream" pointSize="15"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -271,7 +271,7 @@
                                                 <rect key="frame" x="20" y="429.5" width="374" height="48"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수상 및 기타" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpk-bR-Ec4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91.5" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="83" height="20"/>
                                                         <fontDescription key="fontDescription" name="S-CoreDream-5Medium" family="S-Core Dream" pointSize="17"/>
                                                         <color key="textColor" red="0.96862745100000003" green="0.4039215686" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -286,7 +286,7 @@
                                                         <rect key="frame" x="0.0" y="30.5" width="374" height="17.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기재안함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dX-Yk-25k">
-                                                                <rect key="frame" x="0.0" y="0.0" width="58" height="17.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="52" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="S-CoreDream-3Light" family="S-Core Dream" pointSize="15"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -311,7 +311,7 @@
                                                 <rect key="frame" x="20" y="497.5" width="374" height="48"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="외국어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0Q-fC-YpT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="49" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="44.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="S-CoreDream-5Medium" family="S-Core Dream" pointSize="17"/>
                                                         <color key="textColor" red="0.96862745100000003" green="0.4039215686" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -326,7 +326,7 @@
                                                         <rect key="frame" x="0.0" y="30.5" width="374" height="17.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기재안함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cj7-mi-mbH">
-                                                                <rect key="frame" x="0.0" y="0.0" width="58" height="17.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="52" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="S-CoreDream-3Light" family="S-Core Dream" pointSize="15"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -351,7 +351,7 @@
                                                 <rect key="frame" x="20" y="565.5" width="374" height="48"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="링크" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsC-hB-uEV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="33" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="S-CoreDream-5Medium" family="S-Core Dream" pointSize="17"/>
                                                         <color key="textColor" red="0.96862745100000003" green="0.4039215686" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -366,7 +366,7 @@
                                                         <rect key="frame" x="0.0" y="30.5" width="374" height="17.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기재안함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhX-C5-VUC">
-                                                                <rect key="frame" x="0.0" y="0.0" width="58" height="17.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="52" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="S-CoreDream-3Light" family="S-Core Dream" pointSize="15"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -448,6 +448,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bPF-8N-fuo"/>
                     </view>
+                    <connections>
+                        <outlet property="contentView" destination="DYs-1D-lyj" id="TNN-A4-C7p"/>
+                        <outlet property="emailLbl" destination="mpg-gB-Jri" id="Rzk-G6-CMo"/>
+                        <outlet property="identityImgView" destination="sQy-e5-T1K" id="tZN-ey-5K6"/>
+                        <outlet property="likeBtn" destination="rQg-7y-oTc" id="AGZ-m7-Z9t"/>
+                        <outlet property="nameLbl" destination="pV2-cb-v5g" id="xvP-Y8-1gT"/>
+                        <outlet property="phoneNumberLbl" destination="jQP-w4-ujy" id="a9v-Ql-PJo"/>
+                        <outlet property="scrollView" destination="jma-EZ-5ff" id="XAv-1r-jgp"/>
+                        <outlet property="simpleSelfIntroduceTxtView" destination="han-NN-XaF" id="gyB-Hs-b5P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YaQ-77-XMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -620,7 +630,7 @@
                                 <rect key="frame" x="0.0" y="148" width="414" height="665"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRL-qT-fRY">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="696"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="709.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoH-Pf-JHI">
                                                 <rect key="frame" x="20" y="20" width="157.5" height="23.5"/>
@@ -630,69 +640,54 @@
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hho-wg-fDD">
                                                 <rect key="frame" x="277.5" y="20" width="116.5" height="150"/>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="hho-wg-fDD" secondAttribute="height" multiplier="3.5:4.5" id="8j2-VC-h5O"/>
                                                     <constraint firstAttribute="height" constant="150" id="ubx-mw-0qH"/>
                                                 </constraints>
                                             </imageView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="연락처*" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ja0-gG-YLp" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                                <rect key="frame" x="20" y="53.5" width="237.5" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="연락처*" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ja0-gG-YLp" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                                <rect key="frame" x="20" y="53.5" width="237.5" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Ja0-gG-YLp" secondAttribute="height" multiplier="7:1" id="lje-ra-Nwa"/>
+                                                    <constraint firstAttribute="height" constant="45" id="rQL-Vo-J7T"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="S-CoreDream-5Medium" family="S-Core Dream" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
-                                                        <color key="value" red="1" green="0.57254901960000004" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" red="1" green="0.57254901960000004" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
-                                                        <color key="value" red="1" green="0.43137254899999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                                        <real key="value" value="1"/>
+                                                        <color key="value" red="0.96862745100000003" green="0.4039215686" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일*" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="t48-me-sDY" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                                <rect key="frame" x="20" y="97.5" width="237.5" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일*" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="t48-me-sDY" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                                <rect key="frame" x="20" y="108.5" width="237.5" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="t48-me-sDY" secondAttribute="height" multiplier="7:1" id="fGk-eJ-rCf"/>
+                                                    <constraint firstAttribute="height" constant="45" id="1Cb-hY-zeb"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="S-CoreDream-5Medium" family="S-Core Dream" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
-                                                        <color key="value" red="1" green="0.57254901960000004" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" red="1" green="0.57254901960000004" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
-                                                        <color key="value" red="1" green="0.43137254899999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                                        <real key="value" value="1"/>
+                                                        <color key="value" red="0.96862745100000003" green="0.4039215686" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="간단한 자기소개를 입력해주세요*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0SB-k5-nQS">
-                                                <rect key="frame" x="20" y="151.5" width="247.5" height="20"/>
+                                                <rect key="frame" x="20" y="173.5" width="247.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="S-CoreDream-5Medium" family="S-Core Dream" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="3줄 이하로 입력해주세요" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cdp-Bn-4YF" customClass="roundTxtView" customModule="RyujumeApp" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="190" width="374" height="93.5"/>
-                                                <color key="backgroundColor" red="0.97985338184931503" green="0.79065689631232883" blue="0.44321542189041102" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="cdp-Bn-4YF" secondAttribute="height" multiplier="4:1" id="ByU-EQ-FFt"/>
-                                                </constraints>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <fontDescription key="fontDescription" name="S-CoreDream-5Medium" family="S-Core Dream" pointSize="12"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccI-nM-ttV">
-                                                <rect key="frame" x="20" y="303.5" width="374" height="60.5"/>
+                                                <rect key="frame" x="20" y="317" width="374" height="60.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="경력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcr-Lw-XMS">
                                                         <rect key="frame" x="0.0" y="0.0" width="33" height="20"/>
@@ -736,7 +731,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Emj-kK-29R">
-                                                <rect key="frame" x="20" y="384" width="374" height="60.5"/>
+                                                <rect key="frame" x="20" y="397.5" width="374" height="60.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="학력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hx-JY-0ML">
                                                         <rect key="frame" x="0.0" y="0.0" width="33" height="20"/>
@@ -780,7 +775,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFQ-3S-k75">
-                                                <rect key="frame" x="20" y="464.5" width="374" height="60.5"/>
+                                                <rect key="frame" x="20" y="478" width="374" height="60.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수상 및 기타" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46V-g5-pKn">
                                                         <rect key="frame" x="0.0" y="0.0" width="91.5" height="20"/>
@@ -824,7 +819,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYR-hg-fFU">
-                                                <rect key="frame" x="20" y="545" width="374" height="60.5"/>
+                                                <rect key="frame" x="20" y="558.5" width="374" height="60.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="외국어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMA-QU-Fwl">
                                                         <rect key="frame" x="0.0" y="0.0" width="49" height="20"/>
@@ -868,7 +863,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHc-6I-rQT">
-                                                <rect key="frame" x="20" y="625.5" width="374" height="60.5"/>
+                                                <rect key="frame" x="20" y="639" width="374" height="60.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="링크" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSo-je-QWr">
                                                         <rect key="frame" x="0.0" y="0.0" width="33" height="20"/>
@@ -911,6 +906,16 @@
                                                     <constraint firstItem="LGZ-hp-ihJ" firstAttribute="top" secondItem="6FA-oZ-D9b" secondAttribute="bottom" id="lfC-Fx-OF9"/>
                                                 </constraints>
                                             </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="3줄 이하로 입력해주세요" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cdp-Bn-4YF" customClass="roundTxtView" customModule="RyujumeApp" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="203.5" width="374" height="93.5"/>
+                                                <color key="backgroundColor" red="0.97985338184931503" green="0.79065689631232883" blue="0.44321542189041102" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="cdp-Bn-4YF" secondAttribute="height" multiplier="4:1" id="ByU-EQ-FFt"/>
+                                                </constraints>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" name="S-CoreDream-5Medium" family="S-Core Dream" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -942,8 +947,8 @@
                                             <constraint firstItem="Emj-kK-29R" firstAttribute="leading" secondItem="ccI-nM-ttV" secondAttribute="leading" id="dDt-Br-tuS"/>
                                             <constraint firstItem="t48-me-sDY" firstAttribute="trailing" secondItem="Ja0-gG-YLp" secondAttribute="trailing" id="dci-42-ehv"/>
                                             <constraint firstItem="t48-me-sDY" firstAttribute="top" secondItem="Ja0-gG-YLp" secondAttribute="bottom" constant="10" id="eap-Dd-NTS"/>
-                                            <constraint firstItem="cdp-Bn-4YF" firstAttribute="top" secondItem="hho-wg-fDD" secondAttribute="bottom" constant="20" id="f4W-we-gkU"/>
                                             <constraint firstItem="cdp-Bn-4YF" firstAttribute="leading" secondItem="0SB-k5-nQS" secondAttribute="leading" id="gzb-Zp-dog"/>
+                                            <constraint firstItem="cdp-Bn-4YF" firstAttribute="top" secondItem="0SB-k5-nQS" secondAttribute="bottom" constant="10" id="jPR-ey-ChF"/>
                                             <constraint firstItem="Emj-kK-29R" firstAttribute="top" secondItem="ccI-nM-ttV" secondAttribute="bottom" constant="20" id="kug-Tc-fsi"/>
                                             <constraint firstItem="hho-wg-fDD" firstAttribute="top" secondItem="DRL-qT-fRY" secondAttribute="top" constant="20" id="ogm-sv-CbC"/>
                                             <constraint firstItem="0SB-k5-nQS" firstAttribute="top" secondItem="t48-me-sDY" secondAttribute="bottom" constant="20" id="zJl-1l-QUf"/>
