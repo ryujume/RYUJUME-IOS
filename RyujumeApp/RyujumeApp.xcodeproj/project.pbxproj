@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		374B347922D84E4A00B38A20 /* SCDream1.otf in Resources */ = {isa = PBXBuildFile; fileRef = 374B347022D84E4900B38A20 /* SCDream1.otf */; };
+		374B347A22D84E4A00B38A20 /* SCDream6.otf in Resources */ = {isa = PBXBuildFile; fileRef = 374B347122D84E4900B38A20 /* SCDream6.otf */; };
+		374B347B22D84E4A00B38A20 /* SCDream8.otf in Resources */ = {isa = PBXBuildFile; fileRef = 374B347222D84E4900B38A20 /* SCDream8.otf */; };
+		374B347C22D84E4A00B38A20 /* SCDream3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 374B347322D84E4900B38A20 /* SCDream3.otf */; };
+		374B347D22D84E4A00B38A20 /* SCDream5.otf in Resources */ = {isa = PBXBuildFile; fileRef = 374B347422D84E4900B38A20 /* SCDream5.otf */; };
+		374B347E22D84E4A00B38A20 /* SCDream4.otf in Resources */ = {isa = PBXBuildFile; fileRef = 374B347522D84E4A00B38A20 /* SCDream4.otf */; };
+		374B347F22D84E4A00B38A20 /* SCDream7.otf in Resources */ = {isa = PBXBuildFile; fileRef = 374B347622D84E4A00B38A20 /* SCDream7.otf */; };
+		374B348022D84E4A00B38A20 /* SCDream9.otf in Resources */ = {isa = PBXBuildFile; fileRef = 374B347722D84E4A00B38A20 /* SCDream9.otf */; };
+		374B348122D84E4A00B38A20 /* SCDream2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 374B347822D84E4A00B38A20 /* SCDream2.otf */; };
 		374D9EE922C19889001A7ECA /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9EE822C19889001A7ECA /* Base.swift */; };
-		374D9EEB22C19DB4001A7ECA /* S-Core_Dream_OTF in Resources */ = {isa = PBXBuildFile; fileRef = 374D9EEA22C19DB4001A7ECA /* S-Core_Dream_OTF */; };
 		374D9F0522C1AD83001A7ECA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0422C1AD83001A7ECA /* MainVC.swift */; };
 		374D9F0722C1AD92001A7ECA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0622C1AD92001A7ECA /* LoginVC.swift */; };
 		374D9F0922C1AD9C001A7ECA /* JoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0822C1AD9C001A7ECA /* JoinVC.swift */; };
 		374D9F0B22C1ADBD001A7ECA /* MyResumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0A22C1ADBD001A7ECA /* MyResumeVC.swift */; };
 		374D9F0D22C1ADDE001A7ECA /* LikeResumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0C22C1ADDE001A7ECA /* LikeResumeVC.swift */; };
-		374D9F0F22C1BB2C001A7ECA /* ShapeAndColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0E22C1BB2C001A7ECA /* ShapeAndColor.swift */; };
+		374D9F0F22C1BB2C001A7ECA /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0E22C1BB2C001A7ECA /* Util.swift */; };
 		374D9F1122C1DF7D001A7ECA /* DetailResumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F1022C1DF7D001A7ECA /* DetailResumeVC.swift */; };
 		374D9F1722C1EC47001A7ECA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F1622C1EC47001A7ECA /* TabBarViewController.swift */; };
 		374D9F2622C616C5001A7ECA /* AddCareerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2522C616C5001A7ECA /* AddCareerView.swift */; };
@@ -46,14 +54,22 @@
 /* Begin PBXFileReference section */
 		13DECAF10677145C69719117 /* Pods-RyujumeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RyujumeAppTests.release.xcconfig"; path = "Target Support Files/Pods-RyujumeAppTests/Pods-RyujumeAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		18DF9B2D74289477E6195E26 /* Pods-RyujumeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RyujumeApp.release.xcconfig"; path = "Target Support Files/Pods-RyujumeApp/Pods-RyujumeApp.release.xcconfig"; sourceTree = "<group>"; };
+		374B347022D84E4900B38A20 /* SCDream1.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream1.otf; sourceTree = "<group>"; };
+		374B347122D84E4900B38A20 /* SCDream6.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream6.otf; sourceTree = "<group>"; };
+		374B347222D84E4900B38A20 /* SCDream8.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream8.otf; sourceTree = "<group>"; };
+		374B347322D84E4900B38A20 /* SCDream3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream3.otf; sourceTree = "<group>"; };
+		374B347422D84E4900B38A20 /* SCDream5.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream5.otf; sourceTree = "<group>"; };
+		374B347522D84E4A00B38A20 /* SCDream4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream4.otf; sourceTree = "<group>"; };
+		374B347622D84E4A00B38A20 /* SCDream7.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream7.otf; sourceTree = "<group>"; };
+		374B347722D84E4A00B38A20 /* SCDream9.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream9.otf; sourceTree = "<group>"; };
+		374B347822D84E4A00B38A20 /* SCDream2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream2.otf; sourceTree = "<group>"; };
 		374D9EE822C19889001A7ECA /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
-		374D9EEA22C19DB4001A7ECA /* S-Core_Dream_OTF */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "S-Core_Dream_OTF"; sourceTree = "<group>"; };
 		374D9F0422C1AD83001A7ECA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		374D9F0622C1AD92001A7ECA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		374D9F0822C1AD9C001A7ECA /* JoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinVC.swift; sourceTree = "<group>"; };
 		374D9F0A22C1ADBD001A7ECA /* MyResumeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyResumeVC.swift; sourceTree = "<group>"; };
 		374D9F0C22C1ADDE001A7ECA /* LikeResumeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeResumeVC.swift; sourceTree = "<group>"; };
-		374D9F0E22C1BB2C001A7ECA /* ShapeAndColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeAndColor.swift; sourceTree = "<group>"; };
+		374D9F0E22C1BB2C001A7ECA /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		374D9F1022C1DF7D001A7ECA /* DetailResumeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResumeVC.swift; sourceTree = "<group>"; };
 		374D9F1622C1EC47001A7ECA /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		374D9F2522C616C5001A7ECA /* AddCareerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCareerView.swift; sourceTree = "<group>"; };
@@ -98,6 +114,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		374B346F22D84E3A00B38A20 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				374B347022D84E4900B38A20 /* SCDream1.otf */,
+				374B347822D84E4A00B38A20 /* SCDream2.otf */,
+				374B347322D84E4900B38A20 /* SCDream3.otf */,
+				374B347522D84E4A00B38A20 /* SCDream4.otf */,
+				374B347422D84E4900B38A20 /* SCDream5.otf */,
+				374B347122D84E4900B38A20 /* SCDream6.otf */,
+				374B347622D84E4A00B38A20 /* SCDream7.otf */,
+				374B347222D84E4900B38A20 /* SCDream8.otf */,
+				374B347722D84E4A00B38A20 /* SCDream9.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		374D9EE122C1967B001A7ECA /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,19 +160,11 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		374D9EE522C19706001A7ECA /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				374D9EEA22C19DB4001A7ECA /* S-Core_Dream_OTF */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		374D9EEC22C19F14001A7ECA /* Util */ = {
 			isa = PBXGroup;
 			children = (
 				374D9EE822C19889001A7ECA /* Base.swift */,
-				374D9F0E22C1BB2C001A7ECA /* ShapeAndColor.swift */,
+				374D9F0E22C1BB2C001A7ECA /* Util.swift */,
 				374D9F2722C61B31001A7ECA /* MoreInfomation.swift */,
 				374D9F2922C62A6D001A7ECA /* ViewArrayInStackView.swift */,
 			);
@@ -189,10 +213,10 @@
 		3778737222BFC61B009488C6 /* RyujumeApp */ = {
 			isa = PBXGroup;
 			children = (
+				374B346F22D84E3A00B38A20 /* Font */,
 				374D9F1C22C31677001A7ECA /* Views */,
 				374D9EED22C19F7C001A7ECA /* API */,
 				374D9EEC22C19F14001A7ECA /* Util */,
-				374D9EE522C19706001A7ECA /* Fonts */,
 				374D9EE322C196E2001A7ECA /* Models */,
 				374D9EE222C196D6001A7ECA /* Controllers */,
 				374D9EE122C1967B001A7ECA /* UI */,
@@ -316,8 +340,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				374D9EEB22C19DB4001A7ECA /* S-Core_Dream_OTF in Resources */,
+				374B347E22D84E4A00B38A20 /* SCDream4.otf in Resources */,
+				374B347A22D84E4A00B38A20 /* SCDream6.otf in Resources */,
+				374B347B22D84E4A00B38A20 /* SCDream8.otf in Resources */,
+				374B348122D84E4A00B38A20 /* SCDream2.otf in Resources */,
+				374B348022D84E4A00B38A20 /* SCDream9.otf in Resources */,
+				374B347922D84E4A00B38A20 /* SCDream1.otf in Resources */,
+				374B347D22D84E4A00B38A20 /* SCDream5.otf in Resources */,
+				374B347F22D84E4A00B38A20 /* SCDream7.otf in Resources */,
 				3778737E22BFC61D009488C6 /* LaunchScreen.storyboard in Resources */,
+				374B347C22D84E4A00B38A20 /* SCDream3.otf in Resources */,
 				3778737B22BFC61D009488C6 /* Assets.xcassets in Resources */,
 				3778737922BFC61B009488C6 /* Main.storyboard in Resources */,
 			);
@@ -417,7 +449,7 @@
 				374D9F2A22C62A6D001A7ECA /* ViewArrayInStackView.swift in Sources */,
 				374D9F1722C1EC47001A7ECA /* TabBarViewController.swift in Sources */,
 				374D9F2E22C62B47001A7ECA /* AddPrizeAndOthersView.swift in Sources */,
-				374D9F0F22C1BB2C001A7ECA /* ShapeAndColor.swift in Sources */,
+				374D9F0F22C1BB2C001A7ECA /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
