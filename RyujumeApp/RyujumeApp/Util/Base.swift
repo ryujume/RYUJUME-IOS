@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyPickerPopover
 
 extension UIViewController {
     func presentYesOrNoAlert(alertTitle: String?, alertMessage: String?) {
@@ -26,7 +27,7 @@ extension UIViewController {
             
             stackView.insertArrangedSubview(newView, at: idx)
             
-            UIView.animate(withDuration: 0.25) {
+            UIView.animate(withDuration: 0) {
                 newView.isHidden = false
             }
             
@@ -38,7 +39,7 @@ extension UIViewController {
             
             stackView.insertArrangedSubview(newView, at: idx)
             
-            UIView.animate(withDuration: 0.25) {
+            UIView.animate(withDuration: 0) {
                 newView.isHidden = false
             }
             
@@ -50,7 +51,7 @@ extension UIViewController {
             
             stackView.insertArrangedSubview(newView, at: idx)
             
-            UIView.animate(withDuration: 0.25) {
+            UIView.animate(withDuration: 0) {
                 newView.isHidden = false
             }
             
@@ -62,7 +63,7 @@ extension UIViewController {
             
             stackView.insertArrangedSubview(newView, at: idx)
             
-            UIView.animate(withDuration: 0.25) {
+            UIView.animate(withDuration: 0) {
                 newView.isHidden = false
             }
             
@@ -74,7 +75,7 @@ extension UIViewController {
             
             stackView.insertArrangedSubview(newView, at: idx)
             
-            UIView.animate(withDuration: 0.25) {
+            UIView.animate(withDuration: 0) {
                 newView.isHidden = false
             }
             
@@ -82,4 +83,23 @@ extension UIViewController {
         }
         
     }
+}
+
+extension UIView {
+    @objc func tapedDeleteBtn(sender: UIButton) {
+        if let view = sender.superview {
+            UIView.animate(withDuration: 0.05, animations: {view.isHidden = true}) {(_) -> Void in view.removeFromSuperview()}
+        }
+    }
+    
+    @objc func tapedStateBtn(sender: UIButton) {
+        if sender.isSelected == false {
+            sender.setTitle("O", for: .normal)
+            sender.isSelected = true
+        } else {
+            sender.setTitle("X", for: .normal)
+            sender.isSelected = false
+        }
+    }
+
 }
