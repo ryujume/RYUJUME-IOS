@@ -29,7 +29,7 @@
 		374D9F2822C61B31001A7ECA /* MoreInfomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2722C61B31001A7ECA /* MoreInfomation.swift */; };
 		374D9F2A22C62A6D001A7ECA /* ViewArrayInStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2922C62A6D001A7ECA /* ViewArrayInStackView.swift */; };
 		374D9F2C22C62AE7001A7ECA /* AddAcademicBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2B22C62AE7001A7ECA /* AddAcademicBackgroundView.swift */; };
-		374D9F2E22C62B47001A7ECA /* AddPrizeAndOthersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2D22C62B47001A7ECA /* AddPrizeAndOthersView.swift */; };
+		374D9F2E22C62B47001A7ECA /* AddPrizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2D22C62B47001A7ECA /* AddPrizeView.swift */; };
 		374D9F3022C62B67001A7ECA /* AddForeignLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2F22C62B67001A7ECA /* AddForeignLanguageView.swift */; };
 		374D9F3222C62B89001A7ECA /* AddLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F3122C62B89001A7ECA /* AddLinkView.swift */; };
 		3778737422BFC61B009488C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778737322BFC61B009488C6 /* AppDelegate.swift */; };
@@ -37,6 +37,14 @@
 		3778737B22BFC61D009488C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3778737A22BFC61D009488C6 /* Assets.xcassets */; };
 		3778737E22BFC61D009488C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3778737C22BFC61D009488C6 /* LaunchScreen.storyboard */; };
 		3778738922BFC61D009488C6 /* RyujumeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778738822BFC61D009488C6 /* RyujumeAppTests.swift */; };
+		37D35F9B22E53BC100171866 /* GetRyujumeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35F9A22E53BC100171866 /* GetRyujumeModel.swift */; };
+		37D35FA122E551C700171866 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FA022E551C700171866 /* LoginModel.swift */; };
+		37D35FA322E5601400171866 /* PutRujumeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FA222E5601400171866 /* PutRujumeModel.swift */; };
+		37D35FA522E5FACE00171866 /* GetRyujumesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FA422E5FACE00171866 /* GetRyujumesModel.swift */; };
+		37D35FA722E697CF00171866 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FA622E697CF00171866 /* APIProtocol.swift */; };
+		37D35FA922E698D100171866 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FA822E698D100171866 /* AuthAPI.swift */; };
+		37D35FAB22E698D900171866 /* MainAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FAA22E698D900171866 /* MainAPI.swift */; };
+		37D35FAD22E698E600171866 /* MyPageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FAC22E698E600171866 /* MyPageAPI.swift */; };
 		BC24055B4B233211DB43F8B3 /* Pods_RyujumeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6187507791B3DC923CB4BC29 /* Pods_RyujumeApp.framework */; };
 		D96BE4DA0BBD36A8BA984255 /* Pods_RyujumeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E655F9356FD48FE612E0E42 /* Pods_RyujumeAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -76,7 +84,7 @@
 		374D9F2722C61B31001A7ECA /* MoreInfomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfomation.swift; sourceTree = "<group>"; };
 		374D9F2922C62A6D001A7ECA /* ViewArrayInStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewArrayInStackView.swift; sourceTree = "<group>"; };
 		374D9F2B22C62AE7001A7ECA /* AddAcademicBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAcademicBackgroundView.swift; sourceTree = "<group>"; };
-		374D9F2D22C62B47001A7ECA /* AddPrizeAndOthersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPrizeAndOthersView.swift; sourceTree = "<group>"; };
+		374D9F2D22C62B47001A7ECA /* AddPrizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPrizeView.swift; sourceTree = "<group>"; };
 		374D9F2F22C62B67001A7ECA /* AddForeignLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddForeignLanguageView.swift; sourceTree = "<group>"; };
 		374D9F3122C62B89001A7ECA /* AddLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLinkView.swift; sourceTree = "<group>"; };
 		3778737022BFC61B009488C6 /* RyujumeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RyujumeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +96,14 @@
 		3778738422BFC61D009488C6 /* RyujumeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RyujumeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3778738822BFC61D009488C6 /* RyujumeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyujumeAppTests.swift; sourceTree = "<group>"; };
 		3778738A22BFC61D009488C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37D35F9A22E53BC100171866 /* GetRyujumeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRyujumeModel.swift; sourceTree = "<group>"; };
+		37D35FA022E551C700171866 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		37D35FA222E5601400171866 /* PutRujumeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutRujumeModel.swift; sourceTree = "<group>"; };
+		37D35FA422E5FACE00171866 /* GetRyujumesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRyujumesModel.swift; sourceTree = "<group>"; };
+		37D35FA622E697CF00171866 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
+		37D35FA822E698D100171866 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		37D35FAA22E698D900171866 /* MainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAPI.swift; sourceTree = "<group>"; };
+		37D35FAC22E698E600171866 /* MyPageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageAPI.swift; sourceTree = "<group>"; };
 		3E655F9356FD48FE612E0E42 /* Pods_RyujumeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RyujumeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6187507791B3DC923CB4BC29 /* Pods_RyujumeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RyujumeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F82809C70D1F23234EC3A79 /* Pods-RyujumeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RyujumeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RyujumeAppTests/Pods-RyujumeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +172,10 @@
 		374D9EE322C196E2001A7ECA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				37D35F9A22E53BC100171866 /* GetRyujumeModel.swift */,
+				37D35FA222E5601400171866 /* PutRujumeModel.swift */,
+				37D35FA022E551C700171866 /* LoginModel.swift */,
+				37D35FA422E5FACE00171866 /* GetRyujumesModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +194,10 @@
 		374D9EED22C19F7C001A7ECA /* API */ = {
 			isa = PBXGroup;
 			children = (
+				37D35FA622E697CF00171866 /* APIProtocol.swift */,
+				37D35FA822E698D100171866 /* AuthAPI.swift */,
+				37D35FAA22E698D900171866 /* MainAPI.swift */,
+				37D35FAC22E698E600171866 /* MyPageAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -183,7 +207,7 @@
 			children = (
 				374D9F2522C616C5001A7ECA /* AddCareerView.swift */,
 				374D9F2B22C62AE7001A7ECA /* AddAcademicBackgroundView.swift */,
-				374D9F2D22C62B47001A7ECA /* AddPrizeAndOthersView.swift */,
+				374D9F2D22C62B47001A7ECA /* AddPrizeView.swift */,
 				374D9F2F22C62B67001A7ECA /* AddForeignLanguageView.swift */,
 				374D9F3122C62B89001A7ECA /* AddLinkView.swift */,
 			);
@@ -434,22 +458,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				374D9F1122C1DF7D001A7ECA /* DetailResumeVC.swift in Sources */,
+				37D35FA122E551C700171866 /* LoginModel.swift in Sources */,
 				374D9F2C22C62AE7001A7ECA /* AddAcademicBackgroundView.swift in Sources */,
 				374D9F2822C61B31001A7ECA /* MoreInfomation.swift in Sources */,
+				37D35F9B22E53BC100171866 /* GetRyujumeModel.swift in Sources */,
 				374D9F0D22C1ADDE001A7ECA /* LikeResumeVC.swift in Sources */,
 				374D9F0B22C1ADBD001A7ECA /* MyResumeVC.swift in Sources */,
 				374D9EE922C19889001A7ECA /* Base.swift in Sources */,
 				374D9F0522C1AD83001A7ECA /* MainVC.swift in Sources */,
+				37D35FAD22E698E600171866 /* MyPageAPI.swift in Sources */,
 				374D9F0722C1AD92001A7ECA /* LoginVC.swift in Sources */,
 				3778737422BFC61B009488C6 /* AppDelegate.swift in Sources */,
 				374D9F0922C1AD9C001A7ECA /* JoinVC.swift in Sources */,
 				374D9F3022C62B67001A7ECA /* AddForeignLanguageView.swift in Sources */,
 				374D9F2622C616C5001A7ECA /* AddCareerView.swift in Sources */,
 				374D9F3222C62B89001A7ECA /* AddLinkView.swift in Sources */,
+				37D35FAB22E698D900171866 /* MainAPI.swift in Sources */,
+				37D35FA922E698D100171866 /* AuthAPI.swift in Sources */,
+				37D35FA722E697CF00171866 /* APIProtocol.swift in Sources */,
 				374D9F2A22C62A6D001A7ECA /* ViewArrayInStackView.swift in Sources */,
 				374D9F1722C1EC47001A7ECA /* TabBarViewController.swift in Sources */,
-				374D9F2E22C62B47001A7ECA /* AddPrizeAndOthersView.swift in Sources */,
+				374D9F2E22C62B47001A7ECA /* AddPrizeView.swift in Sources */,
 				374D9F0F22C1BB2C001A7ECA /* Util.swift in Sources */,
+				37D35FA522E5FACE00171866 /* GetRyujumesModel.swift in Sources */,
+				37D35FA322E5601400171866 /* PutRujumeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
