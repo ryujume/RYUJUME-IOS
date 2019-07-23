@@ -26,7 +26,7 @@ class MyResumeVC: UIViewController {
     
     @IBOutlet weak var careerView: UIView!
     @IBOutlet weak var academicBackgroundView: UIView!
-    @IBOutlet weak var prizeAndOthersView: UIView!
+    @IBOutlet weak var prizeView: UIView!
     @IBOutlet weak var foreignLanguageView: UIView!
     @IBOutlet weak var linkView: UIView!
     
@@ -36,8 +36,8 @@ class MyResumeVC: UIViewController {
     @IBOutlet weak var academicBackgroundStackView: UIStackView!
     @IBOutlet weak var addAcademicBackgroundBtn: UIButton!
     
-    @IBOutlet weak var prizeAndOthersStackView: UIStackView!
-    @IBOutlet weak var addPrizeAndOthersBtn: UIButton!
+    @IBOutlet weak var prizeStackView: UIStackView!
+    @IBOutlet weak var addPrizeBtn: UIButton!
     
     @IBOutlet weak var foreignLanguageStackView: UIStackView!
     @IBOutlet weak var addForeignLanguageBtn: UIButton!
@@ -67,11 +67,11 @@ class MyResumeVC: UIViewController {
         viewArr.addAcademicBackgroundViewArray.append(newView)
     }
     
-    @IBAction func addPrizeAndOthersBtnAction(_ sender: UIButton) {
-        viewArr.addPrizeAndOthersViewArray = Array<AddPrizeAndOthersView>()
-        guard let newView = self.addView(stateOfButton: .prizeAndOthers, stackView: prizeAndOthersStackView) as? AddPrizeAndOthersView else {return}
+    @IBAction func addPrizeBtnAction(_ sender: UIButton) {
+        viewArr.addPrizeViewArray = Array<AddPrizeView>()
+        guard let newView = self.addView(stateOfButton: .prizeAndOthers, stackView: prizeStackView) as? AddPrizeView else {return}
         newView.prizedDateBtn.addTarget(self, action: #selector(tapedDateBtn), for: .touchUpInside)
-        viewArr.addPrizeAndOthersViewArray.append(newView)
+        viewArr.addPrizeViewArray.append(newView)
     }
     
     @IBAction func addForeignLanguageBtnAction(_ sender: UIButton) {

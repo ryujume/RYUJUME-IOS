@@ -11,8 +11,6 @@ import UIKit
 class MainVC: UIViewController {
 
     @IBOutlet weak var mainCollectionView: UICollectionView!
-    @IBOutlet weak var recommendationLbl: UIButton!
-    @IBOutlet weak var latestLbl: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,4 +24,5 @@ class MainVC: UIViewController {
 class MainCell: UICollectionViewCell {
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var simpleIntroduceTxtView: UITextView!
+    @IBOutlet weak var likeCountLbl: UILabel!
 }
