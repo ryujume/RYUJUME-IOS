@@ -11,7 +11,7 @@ import Foundation
 class ViewArrayInStackView {
     var addCareerViewArray: Array<AddCareerView>!
     var addAcademicBackgroundViewArray: Array<AddAcademicBackgroundView>!
-    var addPrizeAndOthersViewArray: Array<AddPrizeAndOthersView>!
+    var addPrizeViewArray: Array<AddPrizeView>!
     var addForeignLanguageViewArray: Array<AddForeignLanguageView>!
     var addLinkViewArray: Array<AddLinkView>!
 }
