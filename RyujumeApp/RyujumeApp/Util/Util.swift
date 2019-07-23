@@ -41,33 +41,3 @@ enum Color {
         }
     }
 }
-
-extension UIFont {
-    class func appThinFontWith( size:CGFloat ) -> UIFont{
-        return  UIFont(name: "SCDream1", size: size) ?? UIFont.systemFont(ofSize: size)
-    }
-    class func appExtraLightFontWith( size:CGFloat ) -> UIFont{
-        return  UIFont(name: "SCDream2", size: size) ?? UIFont.systemFont(ofSize: size)
-    }
-    class func appLightFontWith( size:CGFloat ) -> UIFont{
-        return  UIFont(name: "SCDream3", size: size) ?? UIFont.systemFont(ofSize: size)
-    }
-    class func appRegularFontWith( size:CGFloat ) -> UIFont{
-        return  UIFont(name: "SCDream4", size: size) ?? UIFont.systemFont(ofSize: size)
-    }
-    class func appMidiumFontWith( size:CGFloat ) -> UIFont{
-        return  UIFont(name: "SCDream5", size: size) ?? UIFont.systemFont(ofSize: size)
-    }
-    class func appBoldFontWith( size:CGFloat ) -> UIFont{
-        return  UIFont(name: "SCDream6", size: size) ?? UIFont.systemFont(ofSize: size)
-    }
-    class func appExtraBoldFontWith( size:CGFloat ) -> UIFont{
-        return  UIFont(name: "SCDream7", size: size) ?? UIFont.systemFont(ofSize: size)
-    }
-    class func appHeavyFontWith( size:CGFloat ) -> UIFont{
-        return  UIFont(name: "SCDream8", size: size) ?? UIFont.systemFont(ofSize: size)
-    }
-    class func appBlackFontWith( size:CGFloat ) -> UIFont{
-        return  UIFont(name: "SCDream9", size: size) ?? UIFont.systemFont(ofSize: size)
-    }
-}
