@@ -11,12 +11,12 @@ import TextFieldEffects
 
 class AddAcademicBackgroundView: UIView {
     
-    let companyTxtField = HoshiTextField()
+    let schoolTxtField = HoshiTextField()
     let deleteBtn = UIButton()
     let startDateBtn = UIButton()
     let dashLbl = UILabel()
     let endDateBtn = UIButton()
-    let isAttendinggLbl = UILabel()
+    let isAttendingLbl = UILabel()
     let isAttendingBtn = UIButton()
     
     func configureView(addStackView: UIStackView){
@@ -24,13 +24,13 @@ class AddAcademicBackgroundView: UIView {
         self.backgroundColor = UIColor.white
         self.translatesAutoresizingMaskIntoConstraints = false
         
-        companyTxtField.placeholder = "학교명"
-        companyTxtField.adjustsFontSizeToFitWidth = true
-        companyTxtField.font = UIFont.appMidiumFontWith(size: (companyTxtField.font?.pointSize ?? 0) - 3)
-        companyTxtField.borderActiveColor = Color.getColor(.main3)()
-        companyTxtField.borderInactiveColor = Color.getColor(.main1)()
-        companyTxtField.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(companyTxtField)
+        schoolTxtField.placeholder = "학교명"
+        schoolTxtField.adjustsFontSizeToFitWidth = true
+        schoolTxtField.font = UIFont.appMidiumFontWith(size: (schoolTxtField.font?.pointSize ?? 0) - 3)
+        schoolTxtField.borderActiveColor = Color.getColor(.main3)()
+        schoolTxtField.borderInactiveColor = Color.getColor(.main1)()
+        schoolTxtField.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(schoolTxtField)
         
         deleteBtn.setTitle("삭제", for: .normal)
         deleteBtn.titleLabel?.adjustsFontSizeToFitWidth = true
@@ -62,11 +62,11 @@ class AddAcademicBackgroundView: UIView {
         endDateBtn.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(endDateBtn)
         
-        isAttendinggLbl.text = "재학중인가요?"
-        isAttendinggLbl.adjustsFontSizeToFitWidth = true
-        isAttendinggLbl.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 5)
-        isAttendinggLbl.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(isAttendinggLbl)
+        isAttendingLbl.text = "재학중인가요?"
+        isAttendingLbl.adjustsFontSizeToFitWidth = true
+        isAttendingLbl.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 5)
+        isAttendingLbl.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(isAttendingLbl)
         
         isAttendingBtn.setTitle("X", for: .normal)
         isAttendingBtn.titleLabel?.adjustsFontSizeToFitWidth = true
@@ -78,9 +78,9 @@ class AddAcademicBackgroundView: UIView {
         
         self.widthAnchor.constraint(equalToConstant: addStackView.frame.width).isActive = true
         
-        companyTxtField.topAnchor.constraint(equalTo: self.topAnchor, constant: 5).isActive = true
-        companyTxtField.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-        companyTxtField.widthAnchor.constraint(greaterThanOrEqualToConstant: 20).isActive = true
+        schoolTxtField.topAnchor.constraint(equalTo: self.topAnchor, constant: 5).isActive = true
+        schoolTxtField.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        schoolTxtField.widthAnchor.constraint(greaterThanOrEqualToConstant: 20).isActive = true
         
         deleteBtn.topAnchor.constraint(equalTo: self.topAnchor, constant: 2).isActive = true
         deleteBtn.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10).isActive = true
@@ -99,11 +99,11 @@ class AddAcademicBackgroundView: UIView {
         isAttendingBtn.trailingAnchor.constraint(equalTo: endDateBtn.trailingAnchor, constant: 10).isActive = true
         isAttendingBtn.topAnchor.constraint(equalTo: endDateBtn.bottomAnchor, constant: 2).isActive = true
         
-        isAttendinggLbl.trailingAnchor.constraint(equalTo: isAttendingBtn.leadingAnchor).isActive = true
-        isAttendinggLbl.centerYAnchor.constraint(equalTo: isAttendingBtn.centerYAnchor).isActive = true
+        isAttendingLbl.trailingAnchor.constraint(equalTo: isAttendingBtn.leadingAnchor).isActive = true
+        isAttendingLbl.centerYAnchor.constraint(equalTo: isAttendingBtn.centerYAnchor).isActive = true
         
-        companyTxtField.bottomAnchor.constraint(equalTo: endDateBtn.bottomAnchor).isActive = true
-        companyTxtField.trailingAnchor.constraint(lessThanOrEqualTo: startDateBtn.leadingAnchor).isActive = true
+        schoolTxtField.bottomAnchor.constraint(equalTo: endDateBtn.bottomAnchor).isActive = true
+        schoolTxtField.trailingAnchor.constraint(lessThanOrEqualTo: startDateBtn.leadingAnchor).isActive = true
         
         self.bottomAnchor.constraint(equalTo: isAttendingBtn.bottomAnchor).isActive = true
     }
