@@ -19,23 +19,22 @@ class AddAcademicBackgroundView: UIView {
     let isAttendingLbl = UILabel()
     let isAttendingBtn = UIButton()
     
-    func configureView(addStackView: UIStackView){
+    func configureView(addStackView: UIStackView, defaultFontSize: Int){
         
         self.backgroundColor = UIColor.white
         self.translatesAutoresizingMaskIntoConstraints = false
         
-        schoolTxtField.placeholder = "학교명"
-        schoolTxtField.adjustsFontSizeToFitWidth = true
-        schoolTxtField.font = UIFont.appMidiumFontWith(size: (schoolTxtField.font?.pointSize ?? 0) - 3)
-        schoolTxtField.borderActiveColor = Color.getColor(.main3)()
-        schoolTxtField.borderInactiveColor = Color.getColor(.main1)()
+        schoolTxtField.placeholder = "학교명*"
+        schoolTxtField.font = UIFont.appMidiumFontWith(size: CGFloat(defaultFontSize - 3))
+        schoolTxtField.borderActiveColor = Color.main3.getColor()
+        schoolTxtField.borderInactiveColor = Color.main1.getColor()
         schoolTxtField.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(schoolTxtField)
         
         deleteBtn.setTitle("삭제", for: .normal)
-        deleteBtn.titleLabel?.adjustsFontSizeToFitWidth = true
-        deleteBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize)
+        deleteBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: CGFloat(defaultFontSize + 3))
         deleteBtn.setTitleColor(UIColor.blue, for: .normal)
+        deleteBtn.tag = 1
         deleteBtn.translatesAutoresizingMaskIntoConstraints = false
         deleteBtn.addTarget(self, action: #selector(tapedDeleteBtn), for: .touchUpInside)
         self.addSubview(deleteBtn)
@@ -43,34 +42,29 @@ class AddAcademicBackgroundView: UIView {
         startDateBtn.setTitle("시작일", for: .normal)
         startDateBtn.setTitleColor(UIColor.darkText, for: .normal)
         startDateBtn.tag = 0
-        startDateBtn.titleLabel?.adjustsFontSizeToFitWidth = true
-        startDateBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 3)
+        startDateBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: CGFloat(defaultFontSize - 3))
         startDateBtn.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(startDateBtn)
         
         dashLbl.text = "-"
-        dashLbl.adjustsFontSizeToFitWidth = true
-        dashLbl.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 5)
+        dashLbl.font = UIFont.appExtraLightFontWith(size: CGFloat(defaultFontSize - 5))
         dashLbl.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(dashLbl)
         
         endDateBtn.setTitle("마지막일", for: .normal)
         endDateBtn.setTitleColor(UIColor.darkText, for: .normal)
         endDateBtn.tag = 1
-        endDateBtn.titleLabel?.adjustsFontSizeToFitWidth = true
-        endDateBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 3)
+        endDateBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: CGFloat(defaultFontSize - 3))
         endDateBtn.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(endDateBtn)
         
         isAttendingLbl.text = "재학중인가요?"
-        isAttendingLbl.adjustsFontSizeToFitWidth = true
-        isAttendingLbl.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 5)
+        isAttendingLbl.font = UIFont.appExtraLightFontWith(size: CGFloat(defaultFontSize - 5))
         isAttendingLbl.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(isAttendingLbl)
         
         isAttendingBtn.setTitle("X", for: .normal)
-        isAttendingBtn.titleLabel?.adjustsFontSizeToFitWidth = true
-        isAttendingBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 5)
+        isAttendingBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: CGFloat(defaultFontSize - 5))
         isAttendingBtn.setTitleColor(UIColor.blue, for: .normal)
         isAttendingBtn.translatesAutoresizingMaskIntoConstraints = false
         isAttendingBtn.addTarget(self, action: #selector(tapedStateBtn), for: .touchUpInside)

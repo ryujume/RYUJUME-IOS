@@ -19,23 +19,22 @@ class AddCareerView: UIView {
     let isWorkingLbl = UILabel()
     let isWorkingBtn = UIButton()
     
-    func configureView(addStackView: UIStackView){
+    func configureView(addStackView: UIStackView, defaultFontSize: Int){
         
         self.backgroundColor = UIColor.white
         self.translatesAutoresizingMaskIntoConstraints = false
         
-        companyTxtField.placeholder = "회사명"
-        companyTxtField.adjustsFontSizeToFitWidth = true
-        companyTxtField.font = UIFont.appMidiumFontWith(size: (companyTxtField.font?.pointSize ?? 0) - 3)
-        companyTxtField.borderActiveColor = Color.getColor(.main3)()
-        companyTxtField.borderInactiveColor = Color.getColor(.main1)()
+        companyTxtField.placeholder = "회사명*"
+        companyTxtField.font = UIFont.appMidiumFontWith(size: CGFloat(defaultFontSize - 3))
+        companyTxtField.borderActiveColor = Color.main3.getColor()
+        companyTxtField.borderInactiveColor = Color.main2.getColor()
         companyTxtField.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(companyTxtField)
         
         deleteBtn.setTitle("삭제", for: .normal)
-        deleteBtn.titleLabel?.adjustsFontSizeToFitWidth = true
-        deleteBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize)
+        deleteBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: CGFloat(defaultFontSize + 3))
         deleteBtn.setTitleColor(UIColor.blue, for: .normal)
+        deleteBtn.tag = 0
         deleteBtn.translatesAutoresizingMaskIntoConstraints = false
         deleteBtn.addTarget(self, action: #selector(tapedDeleteBtn), for: .touchUpInside)
         self.addSubview(deleteBtn)
@@ -43,35 +42,29 @@ class AddCareerView: UIView {
         startDateBtn.setTitle("시작일", for: .normal)
         startDateBtn.setTitleColor(UIColor.darkText, for: .normal)
         startDateBtn.tag = 0
-        startDateBtn.titleLabel?.adjustsFontSizeToFitWidth = true
-        startDateBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 3)
+        startDateBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: CGFloat(defaultFontSize - 3))
         startDateBtn.translatesAutoresizingMaskIntoConstraints = false
-        
         self.addSubview(startDateBtn)
         
         dashLbl.text = "-"
-        dashLbl.adjustsFontSizeToFitWidth = true
-        dashLbl.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 5)
+        dashLbl.font = UIFont.appExtraLightFontWith(size: CGFloat(defaultFontSize - 5))
         dashLbl.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(dashLbl)
         
         endDateBtn.setTitle("마지막일", for: .normal)
         endDateBtn.setTitleColor(UIColor.darkText, for: .normal)
         endDateBtn.tag = 1
-        endDateBtn.titleLabel?.adjustsFontSizeToFitWidth = true
-        endDateBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 3)
+        endDateBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: CGFloat(defaultFontSize - 3))
         endDateBtn.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(endDateBtn)
         
         isWorkingLbl.text = "재직중인가요?"
-        isWorkingLbl.adjustsFontSizeToFitWidth = true
-        isWorkingLbl.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 5)
+        isWorkingLbl.font = UIFont.appExtraLightFontWith(size: CGFloat(defaultFontSize - 5))
         isWorkingLbl.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(isWorkingLbl)
         
         isWorkingBtn.setTitle("X", for: .normal)
-        isWorkingBtn.titleLabel?.adjustsFontSizeToFitWidth = true
-        isWorkingBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: deleteBtn.titleLabel!.font.pointSize - 5)
+        isWorkingBtn.titleLabel?.font = UIFont.appExtraLightFontWith(size: CGFloat(defaultFontSize - 5))
         isWorkingBtn.setTitleColor(UIColor.blue, for: .normal)
         isWorkingBtn.translatesAutoresizingMaskIntoConstraints = false
         isWorkingBtn.addTarget(self, action: #selector(tapedStateBtn), for: .touchUpInside)
