@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		373B6BFA22F182D1009933A0 /* CareerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373B6BF922F182D1009933A0 /* CareerView.swift */; };
+		373B6BFC22F1B12D009933A0 /* AcademicBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373B6BFB22F1B12D009933A0 /* AcademicBackgroundView.swift */; };
+		373B6BFE22F1B13B009933A0 /* PrizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373B6BFD22F1B13B009933A0 /* PrizeView.swift */; };
+		373B6C0022F1B147009933A0 /* ForeignLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373B6BFF22F1B147009933A0 /* ForeignLanguageView.swift */; };
+		373B6C0222F1B16A009933A0 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373B6C0122F1B16A009933A0 /* LinkView.swift */; };
 		374B347922D84E4A00B38A20 /* SCDream1.otf in Resources */ = {isa = PBXBuildFile; fileRef = 374B347022D84E4900B38A20 /* SCDream1.otf */; };
 		374B347A22D84E4A00B38A20 /* SCDream6.otf in Resources */ = {isa = PBXBuildFile; fileRef = 374B347122D84E4900B38A20 /* SCDream6.otf */; };
 		374B347B22D84E4A00B38A20 /* SCDream8.otf in Resources */ = {isa = PBXBuildFile; fileRef = 374B347222D84E4900B38A20 /* SCDream8.otf */; };
@@ -19,32 +24,34 @@
 		374D9EE922C19889001A7ECA /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9EE822C19889001A7ECA /* Base.swift */; };
 		374D9F0522C1AD83001A7ECA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0422C1AD83001A7ECA /* MainVC.swift */; };
 		374D9F0722C1AD92001A7ECA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0622C1AD92001A7ECA /* LoginVC.swift */; };
-		374D9F0922C1AD9C001A7ECA /* JoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0822C1AD9C001A7ECA /* JoinVC.swift */; };
-		374D9F0B22C1ADBD001A7ECA /* MyResumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0A22C1ADBD001A7ECA /* MyResumeVC.swift */; };
-		374D9F0D22C1ADDE001A7ECA /* LikeResumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0C22C1ADDE001A7ECA /* LikeResumeVC.swift */; };
+		374D9F0922C1AD9C001A7ECA /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0822C1AD9C001A7ECA /* RegisterVC.swift */; };
+		374D9F0B22C1ADBD001A7ECA /* MyRyujumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0A22C1ADBD001A7ECA /* MyRyujumeVC.swift */; };
+		374D9F0D22C1ADDE001A7ECA /* LikedRyujumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0C22C1ADDE001A7ECA /* LikedRyujumeVC.swift */; };
 		374D9F0F22C1BB2C001A7ECA /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F0E22C1BB2C001A7ECA /* Util.swift */; };
-		374D9F1122C1DF7D001A7ECA /* DetailResumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F1022C1DF7D001A7ECA /* DetailResumeVC.swift */; };
+		374D9F1122C1DF7D001A7ECA /* DetailRyujumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F1022C1DF7D001A7ECA /* DetailRyujumeVC.swift */; };
 		374D9F1722C1EC47001A7ECA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F1622C1EC47001A7ECA /* TabBarViewController.swift */; };
 		374D9F2622C616C5001A7ECA /* AddCareerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2522C616C5001A7ECA /* AddCareerView.swift */; };
 		374D9F2822C61B31001A7ECA /* MoreInfomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2722C61B31001A7ECA /* MoreInfomation.swift */; };
-		374D9F2A22C62A6D001A7ECA /* ViewArrayInStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2922C62A6D001A7ECA /* ViewArrayInStackView.swift */; };
 		374D9F2C22C62AE7001A7ECA /* AddAcademicBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2B22C62AE7001A7ECA /* AddAcademicBackgroundView.swift */; };
 		374D9F2E22C62B47001A7ECA /* AddPrizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2D22C62B47001A7ECA /* AddPrizeView.swift */; };
 		374D9F3022C62B67001A7ECA /* AddForeignLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F2F22C62B67001A7ECA /* AddForeignLanguageView.swift */; };
 		374D9F3222C62B89001A7ECA /* AddLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D9F3122C62B89001A7ECA /* AddLinkView.swift */; };
+		37601DC022E802120076A28A /* Providers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37601DBF22E802120076A28A /* Providers.swift */; };
 		3778737422BFC61B009488C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778737322BFC61B009488C6 /* AppDelegate.swift */; };
 		3778737922BFC61B009488C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3778737722BFC61B009488C6 /* Main.storyboard */; };
 		3778737B22BFC61D009488C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3778737A22BFC61D009488C6 /* Assets.xcassets */; };
 		3778737E22BFC61D009488C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3778737C22BFC61D009488C6 /* LaunchScreen.storyboard */; };
 		3778738922BFC61D009488C6 /* RyujumeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778738822BFC61D009488C6 /* RyujumeAppTests.swift */; };
-		37D35F9B22E53BC100171866 /* GetRyujumeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35F9A22E53BC100171866 /* GetRyujumeModel.swift */; };
+		378901AB22EFC93900E89C2A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378901AA22EFC93900E89C2A /* UserModel.swift */; };
+		37D35F9B22E53BC100171866 /* RyujumeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35F9A22E53BC100171866 /* RyujumeModel.swift */; };
 		37D35FA122E551C700171866 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FA022E551C700171866 /* LoginModel.swift */; };
-		37D35FA322E5601400171866 /* PutRujumeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FA222E5601400171866 /* PutRujumeModel.swift */; };
-		37D35FA522E5FACE00171866 /* GetRyujumesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FA422E5FACE00171866 /* GetRyujumesModel.swift */; };
+		37D35FA322E5601400171866 /* WriteRyujumeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FA222E5601400171866 /* WriteRyujumeModel.swift */; };
+		37D35FA522E5FACE00171866 /* SimpleRyujumesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FA422E5FACE00171866 /* SimpleRyujumesModel.swift */; };
 		37D35FA722E697CF00171866 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FA622E697CF00171866 /* APIProtocol.swift */; };
 		37D35FA922E698D100171866 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FA822E698D100171866 /* AuthAPI.swift */; };
 		37D35FAB22E698D900171866 /* MainAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FAA22E698D900171866 /* MainAPI.swift */; };
 		37D35FAD22E698E600171866 /* MyPageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FAC22E698E600171866 /* MyPageAPI.swift */; };
+		37D35FB022E6A7FE00171866 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D35FAF22E6A7FE00171866 /* HTTPClient.swift */; };
 		BC24055B4B233211DB43F8B3 /* Pods_RyujumeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6187507791B3DC923CB4BC29 /* Pods_RyujumeApp.framework */; };
 		D96BE4DA0BBD36A8BA984255 /* Pods_RyujumeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E655F9356FD48FE612E0E42 /* Pods_RyujumeAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +69,11 @@
 /* Begin PBXFileReference section */
 		13DECAF10677145C69719117 /* Pods-RyujumeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RyujumeAppTests.release.xcconfig"; path = "Target Support Files/Pods-RyujumeAppTests/Pods-RyujumeAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		18DF9B2D74289477E6195E26 /* Pods-RyujumeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RyujumeApp.release.xcconfig"; path = "Target Support Files/Pods-RyujumeApp/Pods-RyujumeApp.release.xcconfig"; sourceTree = "<group>"; };
+		373B6BF922F182D1009933A0 /* CareerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerView.swift; sourceTree = "<group>"; };
+		373B6BFB22F1B12D009933A0 /* AcademicBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicBackgroundView.swift; sourceTree = "<group>"; };
+		373B6BFD22F1B13B009933A0 /* PrizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizeView.swift; sourceTree = "<group>"; };
+		373B6BFF22F1B147009933A0 /* ForeignLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeignLanguageView.swift; sourceTree = "<group>"; };
+		373B6C0122F1B16A009933A0 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		374B347022D84E4900B38A20 /* SCDream1.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream1.otf; sourceTree = "<group>"; };
 		374B347122D84E4900B38A20 /* SCDream6.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream6.otf; sourceTree = "<group>"; };
 		374B347222D84E4900B38A20 /* SCDream8.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream8.otf; sourceTree = "<group>"; };
@@ -74,19 +86,19 @@
 		374D9EE822C19889001A7ECA /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		374D9F0422C1AD83001A7ECA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		374D9F0622C1AD92001A7ECA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		374D9F0822C1AD9C001A7ECA /* JoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinVC.swift; sourceTree = "<group>"; };
-		374D9F0A22C1ADBD001A7ECA /* MyResumeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyResumeVC.swift; sourceTree = "<group>"; };
-		374D9F0C22C1ADDE001A7ECA /* LikeResumeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeResumeVC.swift; sourceTree = "<group>"; };
+		374D9F0822C1AD9C001A7ECA /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		374D9F0A22C1ADBD001A7ECA /* MyRyujumeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRyujumeVC.swift; sourceTree = "<group>"; };
+		374D9F0C22C1ADDE001A7ECA /* LikedRyujumeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedRyujumeVC.swift; sourceTree = "<group>"; };
 		374D9F0E22C1BB2C001A7ECA /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
-		374D9F1022C1DF7D001A7ECA /* DetailResumeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResumeVC.swift; sourceTree = "<group>"; };
+		374D9F1022C1DF7D001A7ECA /* DetailRyujumeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRyujumeVC.swift; sourceTree = "<group>"; };
 		374D9F1622C1EC47001A7ECA /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		374D9F2522C616C5001A7ECA /* AddCareerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCareerView.swift; sourceTree = "<group>"; };
 		374D9F2722C61B31001A7ECA /* MoreInfomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfomation.swift; sourceTree = "<group>"; };
-		374D9F2922C62A6D001A7ECA /* ViewArrayInStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewArrayInStackView.swift; sourceTree = "<group>"; };
 		374D9F2B22C62AE7001A7ECA /* AddAcademicBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAcademicBackgroundView.swift; sourceTree = "<group>"; };
 		374D9F2D22C62B47001A7ECA /* AddPrizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPrizeView.swift; sourceTree = "<group>"; };
 		374D9F2F22C62B67001A7ECA /* AddForeignLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddForeignLanguageView.swift; sourceTree = "<group>"; };
 		374D9F3122C62B89001A7ECA /* AddLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLinkView.swift; sourceTree = "<group>"; };
+		37601DBF22E802120076A28A /* Providers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Providers.swift; sourceTree = "<group>"; };
 		3778737022BFC61B009488C6 /* RyujumeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RyujumeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3778737322BFC61B009488C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3778737822BFC61B009488C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,14 +108,16 @@
 		3778738422BFC61D009488C6 /* RyujumeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RyujumeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3778738822BFC61D009488C6 /* RyujumeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyujumeAppTests.swift; sourceTree = "<group>"; };
 		3778738A22BFC61D009488C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37D35F9A22E53BC100171866 /* GetRyujumeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRyujumeModel.swift; sourceTree = "<group>"; };
+		378901AA22EFC93900E89C2A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		37D35F9A22E53BC100171866 /* RyujumeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyujumeModel.swift; sourceTree = "<group>"; };
 		37D35FA022E551C700171866 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
-		37D35FA222E5601400171866 /* PutRujumeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutRujumeModel.swift; sourceTree = "<group>"; };
-		37D35FA422E5FACE00171866 /* GetRyujumesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRyujumesModel.swift; sourceTree = "<group>"; };
+		37D35FA222E5601400171866 /* WriteRyujumeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteRyujumeModel.swift; sourceTree = "<group>"; };
+		37D35FA422E5FACE00171866 /* SimpleRyujumesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRyujumesModel.swift; sourceTree = "<group>"; };
 		37D35FA622E697CF00171866 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
 		37D35FA822E698D100171866 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
 		37D35FAA22E698D900171866 /* MainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAPI.swift; sourceTree = "<group>"; };
 		37D35FAC22E698E600171866 /* MyPageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageAPI.swift; sourceTree = "<group>"; };
+		37D35FAF22E6A7FE00171866 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		3E655F9356FD48FE612E0E42 /* Pods_RyujumeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RyujumeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6187507791B3DC923CB4BC29 /* Pods_RyujumeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RyujumeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F82809C70D1F23234EC3A79 /* Pods-RyujumeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RyujumeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RyujumeAppTests/Pods-RyujumeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -160,10 +174,10 @@
 			children = (
 				374D9F0422C1AD83001A7ECA /* MainVC.swift */,
 				374D9F0622C1AD92001A7ECA /* LoginVC.swift */,
-				374D9F0822C1AD9C001A7ECA /* JoinVC.swift */,
-				374D9F0A22C1ADBD001A7ECA /* MyResumeVC.swift */,
-				374D9F0C22C1ADDE001A7ECA /* LikeResumeVC.swift */,
-				374D9F1022C1DF7D001A7ECA /* DetailResumeVC.swift */,
+				374D9F0822C1AD9C001A7ECA /* RegisterVC.swift */,
+				374D9F0A22C1ADBD001A7ECA /* MyRyujumeVC.swift */,
+				374D9F0C22C1ADDE001A7ECA /* LikedRyujumeVC.swift */,
+				374D9F1022C1DF7D001A7ECA /* DetailRyujumeVC.swift */,
 				374D9F1622C1EC47001A7ECA /* TabBarViewController.swift */,
 			);
 			path = Controllers;
@@ -172,10 +186,11 @@
 		374D9EE322C196E2001A7ECA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				37D35F9A22E53BC100171866 /* GetRyujumeModel.swift */,
-				37D35FA222E5601400171866 /* PutRujumeModel.swift */,
+				37D35F9A22E53BC100171866 /* RyujumeModel.swift */,
+				37D35FA222E5601400171866 /* WriteRyujumeModel.swift */,
 				37D35FA022E551C700171866 /* LoginModel.swift */,
-				37D35FA422E5FACE00171866 /* GetRyujumesModel.swift */,
+				37D35FA422E5FACE00171866 /* SimpleRyujumesModel.swift */,
+				378901AA22EFC93900E89C2A /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,20 +201,18 @@
 				374D9EE822C19889001A7ECA /* Base.swift */,
 				374D9F0E22C1BB2C001A7ECA /* Util.swift */,
 				374D9F2722C61B31001A7ECA /* MoreInfomation.swift */,
-				374D9F2922C62A6D001A7ECA /* ViewArrayInStackView.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
 		};
-		374D9EED22C19F7C001A7ECA /* API */ = {
+		374D9EED22C19F7C001A7ECA /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				37D35FA622E697CF00171866 /* APIProtocol.swift */,
-				37D35FA822E698D100171866 /* AuthAPI.swift */,
-				37D35FAA22E698D900171866 /* MainAPI.swift */,
-				37D35FAC22E698E600171866 /* MyPageAPI.swift */,
+				37D35FAE22E6A7BF00171866 /* API */,
+				37D35FAF22E6A7FE00171866 /* HTTPClient.swift */,
+				37601DBF22E802120076A28A /* Providers.swift */,
 			);
-			path = API;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		374D9F1C22C31677001A7ECA /* Views */ = {
@@ -210,6 +223,11 @@
 				374D9F2D22C62B47001A7ECA /* AddPrizeView.swift */,
 				374D9F2F22C62B67001A7ECA /* AddForeignLanguageView.swift */,
 				374D9F3122C62B89001A7ECA /* AddLinkView.swift */,
+				373B6BF922F182D1009933A0 /* CareerView.swift */,
+				373B6BFB22F1B12D009933A0 /* AcademicBackgroundView.swift */,
+				373B6BFD22F1B13B009933A0 /* PrizeView.swift */,
+				373B6BFF22F1B147009933A0 /* ForeignLanguageView.swift */,
+				373B6C0122F1B16A009933A0 /* LinkView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,7 +257,7 @@
 			children = (
 				374B346F22D84E3A00B38A20 /* Font */,
 				374D9F1C22C31677001A7ECA /* Views */,
-				374D9EED22C19F7C001A7ECA /* API */,
+				374D9EED22C19F7C001A7ECA /* Networking */,
 				374D9EEC22C19F14001A7ECA /* Util */,
 				374D9EE322C196E2001A7ECA /* Models */,
 				374D9EE222C196D6001A7ECA /* Controllers */,
@@ -258,6 +276,17 @@
 				3778738A22BFC61D009488C6 /* Info.plist */,
 			);
 			path = RyujumeAppTests;
+			sourceTree = "<group>";
+		};
+		37D35FAE22E6A7BF00171866 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				37D35FA622E697CF00171866 /* APIProtocol.swift */,
+				37D35FA822E698D100171866 /* AuthAPI.swift */,
+				37D35FAA22E698D900171866 /* MainAPI.swift */,
+				37D35FAC22E698E600171866 /* MyPageAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		A836D1019958E21F846E02A7 /* Frameworks */ = {
@@ -457,31 +486,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				374D9F1122C1DF7D001A7ECA /* DetailResumeVC.swift in Sources */,
+				37601DC022E802120076A28A /* Providers.swift in Sources */,
+				374D9F1122C1DF7D001A7ECA /* DetailRyujumeVC.swift in Sources */,
 				37D35FA122E551C700171866 /* LoginModel.swift in Sources */,
+				37D35FB022E6A7FE00171866 /* HTTPClient.swift in Sources */,
 				374D9F2C22C62AE7001A7ECA /* AddAcademicBackgroundView.swift in Sources */,
 				374D9F2822C61B31001A7ECA /* MoreInfomation.swift in Sources */,
-				37D35F9B22E53BC100171866 /* GetRyujumeModel.swift in Sources */,
-				374D9F0D22C1ADDE001A7ECA /* LikeResumeVC.swift in Sources */,
-				374D9F0B22C1ADBD001A7ECA /* MyResumeVC.swift in Sources */,
+				37D35F9B22E53BC100171866 /* RyujumeModel.swift in Sources */,
+				374D9F0D22C1ADDE001A7ECA /* LikedRyujumeVC.swift in Sources */,
+				373B6C0022F1B147009933A0 /* ForeignLanguageView.swift in Sources */,
+				373B6BFA22F182D1009933A0 /* CareerView.swift in Sources */,
+				374D9F0B22C1ADBD001A7ECA /* MyRyujumeVC.swift in Sources */,
 				374D9EE922C19889001A7ECA /* Base.swift in Sources */,
 				374D9F0522C1AD83001A7ECA /* MainVC.swift in Sources */,
 				37D35FAD22E698E600171866 /* MyPageAPI.swift in Sources */,
 				374D9F0722C1AD92001A7ECA /* LoginVC.swift in Sources */,
 				3778737422BFC61B009488C6 /* AppDelegate.swift in Sources */,
-				374D9F0922C1AD9C001A7ECA /* JoinVC.swift in Sources */,
+				374D9F0922C1AD9C001A7ECA /* RegisterVC.swift in Sources */,
 				374D9F3022C62B67001A7ECA /* AddForeignLanguageView.swift in Sources */,
+				373B6C0222F1B16A009933A0 /* LinkView.swift in Sources */,
+				373B6BFE22F1B13B009933A0 /* PrizeView.swift in Sources */,
+				378901AB22EFC93900E89C2A /* UserModel.swift in Sources */,
 				374D9F2622C616C5001A7ECA /* AddCareerView.swift in Sources */,
 				374D9F3222C62B89001A7ECA /* AddLinkView.swift in Sources */,
 				37D35FAB22E698D900171866 /* MainAPI.swift in Sources */,
 				37D35FA922E698D100171866 /* AuthAPI.swift in Sources */,
 				37D35FA722E697CF00171866 /* APIProtocol.swift in Sources */,
-				374D9F2A22C62A6D001A7ECA /* ViewArrayInStackView.swift in Sources */,
 				374D9F1722C1EC47001A7ECA /* TabBarViewController.swift in Sources */,
 				374D9F2E22C62B47001A7ECA /* AddPrizeView.swift in Sources */,
+				373B6BFC22F1B12D009933A0 /* AcademicBackgroundView.swift in Sources */,
 				374D9F0F22C1BB2C001A7ECA /* Util.swift in Sources */,
-				37D35FA522E5FACE00171866 /* GetRyujumesModel.swift in Sources */,
-				37D35FA322E5601400171866 /* PutRujumeModel.swift in Sources */,
+				37D35FA522E5FACE00171866 /* SimpleRyujumesModel.swift in Sources */,
+				37D35FA322E5601400171866 /* WriteRyujumeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
