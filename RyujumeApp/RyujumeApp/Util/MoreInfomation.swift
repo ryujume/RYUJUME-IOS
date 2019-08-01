@@ -12,7 +12,7 @@ import Foundation
 enum MoreInfomation{
     case career
     case academicBackground
-    case prizeAndOthers
+    case prize
     case foreignLanguage
     case link
 }
