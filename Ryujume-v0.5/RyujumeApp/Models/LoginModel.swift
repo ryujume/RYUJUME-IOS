@@ -10,8 +10,4 @@ import Foundation
 
 struct LoginModel: Codable {
     let token: String
-    
-    enum CodingKeys: String, CodingKey {
-        case token
-    }
 }

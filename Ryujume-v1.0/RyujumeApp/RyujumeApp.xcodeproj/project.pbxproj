@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		371365EC2310D1D00030F72B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371365EB2310D1D00030F72B /* AppDelegate.swift */; };
+		371365F12310D1D00030F72B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371365EF2310D1D00030F72B /* Main.storyboard */; };
+		371365F32310D1D20030F72B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 371365F22310D1D20030F72B /* Assets.xcassets */; };
+		371365F62310D1D20030F72B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371365F42310D1D20030F72B /* LaunchScreen.storyboard */; };
+		37136617231141FC0030F72B /* SCDream1.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37136605231141EF0030F72B /* SCDream1.otf */; };
+		37136618231141FC0030F72B /* SCDream2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3713660D231141EF0030F72B /* SCDream2.otf */; };
+		37136619231141FC0030F72B /* SCDream3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37136606231141EF0030F72B /* SCDream3.otf */; };
+		3713661A231141FC0030F72B /* SCDream4.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3713660A231141EF0030F72B /* SCDream4.otf */; };
+		3713661B231141FC0030F72B /* SCDream5.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37136607231141EF0030F72B /* SCDream5.otf */; };
+		3713661C231141FC0030F72B /* SCDream6.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3713660B231141EF0030F72B /* SCDream6.otf */; };
+		3713661D231141FC0030F72B /* SCDream7.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37136608231141EF0030F72B /* SCDream7.otf */; };
+		3713661E231141FC0030F72B /* SCDream8.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37136609231141EF0030F72B /* SCDream8.otf */; };
+		3713661F231141FC0030F72B /* SCDream9.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3713660C231141EF0030F72B /* SCDream9.otf */; };
+		371366272311426D0030F72B /* SimpleRyujumesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371366212311426D0030F72B /* SimpleRyujumesModel.swift */; };
+		371366282311426D0030F72B /* RyujumeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371366222311426D0030F72B /* RyujumeModel.swift */; };
+		3713662B2311426D0030F72B /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371366252311426D0030F72B /* LoginModel.swift */; };
+		371366332311429C0030F72B /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713662C2311429C0030F72B /* RegisterVC.swift */; };
+		371366342311429C0030F72B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713662D2311429C0030F72B /* MainVC.swift */; };
+		371366362311429C0030F72B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713662F2311429C0030F72B /* LoginVC.swift */; };
+		371366372311429C0030F72B /* DetailRyujumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371366302311429C0030F72B /* DetailRyujumeVC.swift */; };
+		371366382311429C0030F72B /* LikedRyujumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371366312311429C0030F72B /* LikedRyujumeVC.swift */; };
+		371366392311429C0030F72B /* MyRyujumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371366322311429C0030F72B /* MyRyujumeVC.swift */; };
+		3713663C231424650030F72B /* RyujumeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713663B231424650030F72B /* RyujumeURL.swift */; };
+		3713663E231425030030F72B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713663D231425030030F72B /* HTTPClient.swift */; };
+		371366402314B7D10030F72B /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713663F2314B7D10030F72B /* ViewModelType.swift */; };
+		371366482314BA0A0030F72B /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371366472314BA0A0030F72B /* Provider.swift */; };
+		3713664E2314BAD50030F72B /* RyujumeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713664D2314BAD50030F72B /* RyujumeAPI.swift */; };
+		371366502314CC710030F72B /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713664F2314CC710030F72B /* Base.swift */; };
+		5E5F8E31A32B2492F79D30DB /* Pods_RyujumeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D921DD22F7D4B5579353B6 /* Pods_RyujumeApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		371365E82310D1D00030F72B /* RyujumeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RyujumeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		371365EB2310D1D00030F72B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		371365F02310D1D00030F72B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		371365F22310D1D20030F72B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		371365F52310D1D20030F72B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		371365F72310D1D20030F72B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37136605231141EF0030F72B /* SCDream1.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SCDream1.otf; path = "../../../../Ryujume-v0.5/RyujumeApp/Fonts/SCDream1.otf"; sourceTree = "<group>"; };
+		37136606231141EF0030F72B /* SCDream3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SCDream3.otf; path = "../../../../Ryujume-v0.5/RyujumeApp/Fonts/SCDream3.otf"; sourceTree = "<group>"; };
+		37136607231141EF0030F72B /* SCDream5.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SCDream5.otf; path = "../../../../Ryujume-v0.5/RyujumeApp/Fonts/SCDream5.otf"; sourceTree = "<group>"; };
+		37136608231141EF0030F72B /* SCDream7.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SCDream7.otf; path = "../../../../Ryujume-v0.5/RyujumeApp/Fonts/SCDream7.otf"; sourceTree = "<group>"; };
+		37136609231141EF0030F72B /* SCDream8.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SCDream8.otf; path = "../../../../Ryujume-v0.5/RyujumeApp/Fonts/SCDream8.otf"; sourceTree = "<group>"; };
+		3713660A231141EF0030F72B /* SCDream4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SCDream4.otf; path = "../../../../Ryujume-v0.5/RyujumeApp/Fonts/SCDream4.otf"; sourceTree = "<group>"; };
+		3713660B231141EF0030F72B /* SCDream6.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SCDream6.otf; path = "../../../../Ryujume-v0.5/RyujumeApp/Fonts/SCDream6.otf"; sourceTree = "<group>"; };
+		3713660C231141EF0030F72B /* SCDream9.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SCDream9.otf; path = "../../../../Ryujume-v0.5/RyujumeApp/Fonts/SCDream9.otf"; sourceTree = "<group>"; };
+		3713660D231141EF0030F72B /* SCDream2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SCDream2.otf; path = "../../../../Ryujume-v0.5/RyujumeApp/Fonts/SCDream2.otf"; sourceTree = "<group>"; };
+		371366212311426D0030F72B /* SimpleRyujumesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleRyujumesModel.swift; path = "../../../../Ryujume-v0.5/RyujumeApp/Models/SimpleRyujumesModel.swift"; sourceTree = "<group>"; };
+		371366222311426D0030F72B /* RyujumeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RyujumeModel.swift; path = "../../../../Ryujume-v0.5/RyujumeApp/Models/RyujumeModel.swift"; sourceTree = "<group>"; };
+		371366252311426D0030F72B /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginModel.swift; path = "../../../../Ryujume-v0.5/RyujumeApp/Models/LoginModel.swift"; sourceTree = "<group>"; };
+		3713662C2311429C0030F72B /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		3713662D2311429C0030F72B /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		3713662F2311429C0030F72B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		371366302311429C0030F72B /* DetailRyujumeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRyujumeVC.swift; sourceTree = "<group>"; };
+		371366312311429C0030F72B /* LikedRyujumeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedRyujumeVC.swift; sourceTree = "<group>"; };
+		371366322311429C0030F72B /* MyRyujumeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRyujumeVC.swift; sourceTree = "<group>"; };
+		3713663B231424650030F72B /* RyujumeURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyujumeURL.swift; sourceTree = "<group>"; };
+		3713663D231425030030F72B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		3713663F2314B7D10030F72B /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		371366472314BA0A0030F72B /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		3713664D2314BAD50030F72B /* RyujumeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyujumeAPI.swift; sourceTree = "<group>"; };
+		3713664F2314CC710030F72B /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		C2D921DD22F7D4B5579353B6 /* Pods_RyujumeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RyujumeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31FCCBC43484B4C95432FA1 /* Pods-RyujumeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RyujumeApp.debug.xcconfig"; path = "Target Support Files/Pods-RyujumeApp/Pods-RyujumeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CC2C50CC623866EB7FED5161 /* Pods-RyujumeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RyujumeApp.release.xcconfig"; path = "Target Support Files/Pods-RyujumeApp/Pods-RyujumeApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		371365E52310D1D00030F72B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E5F8E31A32B2492F79D30DB /* Pods_RyujumeApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		371365DF2310D1D00030F72B = {
+			isa = PBXGroup;
+			children = (
+				371365EA2310D1D00030F72B /* RyujumeApp */,
+				371365E92310D1D00030F72B /* Products */,
+				3E95FCFAAA539FF771D9D241 /* Pods */,
+				5BF7A1C286281615C9F49C53 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		371365E92310D1D00030F72B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				371365E82310D1D00030F72B /* RyujumeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		371365EA2310D1D00030F72B /* RyujumeApp */ = {
+			isa = PBXGroup;
+			children = (
+				3713660423113FC90030F72B /* Util */,
+				3713660323113FAE0030F72B /* Font */,
+				3713660223113F950030F72B /* Networking */,
+				3713660123113F860030F72B /* Model */,
+				3713660023113F760030F72B /* ViewModel */,
+				371365FE23113F440030F72B /* ViewController */,
+				371365FD23113F1D0030F72B /* UI */,
+				371365EB2310D1D00030F72B /* AppDelegate.swift */,
+				371365F22310D1D20030F72B /* Assets.xcassets */,
+				371365F72310D1D20030F72B /* Info.plist */,
+			);
+			path = RyujumeApp;
+			sourceTree = "<group>";
+		};
+		371365FD23113F1D0030F72B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				371365EF2310D1D00030F72B /* Main.storyboard */,
+				371365F42310D1D20030F72B /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		371365FE23113F440030F72B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3713662C2311429C0030F72B /* RegisterVC.swift */,
+				3713662F2311429C0030F72B /* LoginVC.swift */,
+				3713662D2311429C0030F72B /* MainVC.swift */,
+				371366302311429C0030F72B /* DetailRyujumeVC.swift */,
+				371366312311429C0030F72B /* LikedRyujumeVC.swift */,
+				371366322311429C0030F72B /* MyRyujumeVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3713660023113F760030F72B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3713660123113F860030F72B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				371366252311426D0030F72B /* LoginModel.swift */,
+				371366222311426D0030F72B /* RyujumeModel.swift */,
+				371366212311426D0030F72B /* SimpleRyujumesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3713660223113F950030F72B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3713663B231424650030F72B /* RyujumeURL.swift */,
+				3713663D231425030030F72B /* HTTPClient.swift */,
+				371366472314BA0A0030F72B /* Provider.swift */,
+				3713664D2314BAD50030F72B /* RyujumeAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3713660323113FAE0030F72B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				37136605231141EF0030F72B /* SCDream1.otf */,
+				3713660D231141EF0030F72B /* SCDream2.otf */,
+				37136606231141EF0030F72B /* SCDream3.otf */,
+				3713660A231141EF0030F72B /* SCDream4.otf */,
+				37136607231141EF0030F72B /* SCDream5.otf */,
+				3713660B231141EF0030F72B /* SCDream6.otf */,
+				37136608231141EF0030F72B /* SCDream7.otf */,
+				37136609231141EF0030F72B /* SCDream8.otf */,
+				3713660C231141EF0030F72B /* SCDream9.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		3713660423113FC90030F72B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3713663F2314B7D10030F72B /* ViewModelType.swift */,
+				3713664F2314CC710030F72B /* Base.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		3E95FCFAAA539FF771D9D241 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C31FCCBC43484B4C95432FA1 /* Pods-RyujumeApp.debug.xcconfig */,
+				CC2C50CC623866EB7FED5161 /* Pods-RyujumeApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5BF7A1C286281615C9F49C53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2D921DD22F7D4B5579353B6 /* Pods_RyujumeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		371365E72310D1D00030F72B /* RyujumeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 371365FA2310D1D20030F72B /* Build configuration list for PBXNativeTarget "RyujumeApp" */;
+			buildPhases = (
+				C83E50AC345AEAE12AEADE0A /* [CP] Check Pods Manifest.lock */,
+				371365E42310D1D00030F72B /* Sources */,
+				371365E52310D1D00030F72B /* Frameworks */,
+				371365E62310D1D00030F72B /* Resources */,
+				D776F6B47298F12CD04E330B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RyujumeApp;
+			productName = RyujumeApp;
+			productReference = 371365E82310D1D00030F72B /* RyujumeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		371365E02310D1D00030F72B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = baby1234;
+				TargetAttributes = {
+					371365E72310D1D00030F72B = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 371365E32310D1D00030F72B /* Build configuration list for PBXProject "RyujumeApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 371365DF2310D1D00030F72B;
+			productRefGroup = 371365E92310D1D00030F72B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				371365E72310D1D00030F72B /* RyujumeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		371365E62310D1D00030F72B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3713661E231141FC0030F72B /* SCDream8.otf in Resources */,
+				37136618231141FC0030F72B /* SCDream2.otf in Resources */,
+				371365F62310D1D20030F72B /* LaunchScreen.storyboard in Resources */,
+				3713661F231141FC0030F72B /* SCDream9.otf in Resources */,
+				371365F32310D1D20030F72B /* Assets.xcassets in Resources */,
+				3713661C231141FC0030F72B /* SCDream6.otf in Resources */,
+				3713661A231141FC0030F72B /* SCDream4.otf in Resources */,
+				3713661D231141FC0030F72B /* SCDream7.otf in Resources */,
+				37136619231141FC0030F72B /* SCDream3.otf in Resources */,
+				371365F12310D1D00030F72B /* Main.storyboard in Resources */,
+				37136617231141FC0030F72B /* SCDream1.otf in Resources */,
+				3713661B231141FC0030F72B /* SCDream5.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C83E50AC345AEAE12AEADE0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RyujumeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D776F6B47298F12CD04E330B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RyujumeApp/Pods-RyujumeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RyujumeApp/Pods-RyujumeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RyujumeApp/Pods-RyujumeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		371365E42310D1D00030F72B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371366362311429C0030F72B /* LoginVC.swift in Sources */,
+				371366332311429C0030F72B /* RegisterVC.swift in Sources */,
+				3713662B2311426D0030F72B /* LoginModel.swift in Sources */,
+				371366392311429C0030F72B /* MyRyujumeVC.swift in Sources */,
+				371366402314B7D10030F72B /* ViewModelType.swift in Sources */,
+				371366272311426D0030F72B /* SimpleRyujumesModel.swift in Sources */,
+				371366482314BA0A0030F72B /* Provider.swift in Sources */,
+				3713663C231424650030F72B /* RyujumeURL.swift in Sources */,
+				371366502314CC710030F72B /* Base.swift in Sources */,
+				371366372311429C0030F72B /* DetailRyujumeVC.swift in Sources */,
+				371366342311429C0030F72B /* MainVC.swift in Sources */,
+				371366382311429C0030F72B /* LikedRyujumeVC.swift in Sources */,
+				3713663E231425030030F72B /* HTTPClient.swift in Sources */,
+				371365EC2310D1D00030F72B /* AppDelegate.swift in Sources */,
+				3713664E2314BAD50030F72B /* RyujumeAPI.swift in Sources */,
+				371366282311426D0030F72B /* RyujumeModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		371365EF2310D1D00030F72B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				371365F02310D1D00030F72B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		371365F42310D1D20030F72B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				371365F52310D1D20030F72B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		371365F82310D1D20030F72B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		371365F92310D1D20030F72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		371365FB2310D1D20030F72B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C31FCCBC43484B4C95432FA1 /* Pods-RyujumeApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VY4FNTH9C6;
+				INFOPLIST_FILE = RyujumeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.macnpc.RyujumeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		371365FC2310D1D20030F72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC2C50CC623866EB7FED5161 /* Pods-RyujumeApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VY4FNTH9C6;
+				INFOPLIST_FILE = RyujumeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.macnpc.RyujumeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		371365E32310D1D00030F72B /* Build configuration list for PBXProject "RyujumeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371365F82310D1D20030F72B /* Debug */,
+				371365F92310D1D20030F72B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		371365FA2310D1D20030F72B /* Build configuration list for PBXNativeTarget "RyujumeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371365FB2310D1D20030F72B /* Debug */,
+				371365FC2310D1D20030F72B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 371365E02310D1D00030F72B /* Project object */;
+}
