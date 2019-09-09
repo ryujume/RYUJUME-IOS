@@ -22,6 +22,7 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var nameUnderlineView: UIView!
     
     @IBOutlet weak var doneBtn: UIButton!
+    
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -34,25 +35,25 @@ class RegisterVC: UIViewController {
     }
     
     private func bindViewModel() {
-        let input = RegisterVM.input(id: idTxtField.rx.text.orEmpty.asDriver(),
+        let input = RegisterVM.Input(id: idTxtField.rx.text.orEmpty.asDriver(),
                                      pw: pwTxtField.rx.text.orEmpty.asDriver(),
                                      name: nameTxtField.rx.text.orEmpty.asDriver(),
                                      registerTaps: doneBtn.rx.tap.asSignal())
         let output = RegisterVM().transform(input: input)
         
-        output.registerInfoCheck.filter {$0 == false}
-            .drive(onNext: { [unowned self] _ in self.presentOKAlert(title: "회원가입 정보를 확인해주세요", message: nil) })
+        output.infoCheck.filter {$0 == false}
+            .drive(onNext: { [unowned self] _ in self.presentOKAlert(title: "회원가입 정보를 확인", message: "모두 4글자 이상 입력", completion: nil) })
             .disposed(by: disposeBag)
         
-        output.registerResult
+        output.result
             .filter { [unowned self] (result) -> Bool in
                 if result == .failure {
-                    self.presentOKAlert(title: "회원가입에 실패했습니다", message: nil)
+                    self.presentOKAlert(title: "회원가입에 실패", message: nil, completion: nil)
                     return false
                 }
                 return true
             }.drive(onNext: { [unowned self] _ in
-                self.presentOKAlert(title: "회원가입 성공", message: "로그인화면으로 돌아가\n 로그인해주세요")
+                self.presentOKAlert(title: "회원가입 성공", message: nil, completion: {[unowned self] _ in self.goPreviousVC()})
             })
             .disposed(by: disposeBag)
     }
