@@ -13,19 +13,19 @@ import RxSwift
 
 final class RegisterVM: ViewModelType {
     
-    struct input {
+    struct Input {
         let id: Driver<String>
         let pw: Driver<String>
         let name: Driver<String>
         let registerTaps: Signal<Void>
     }
     
-    struct output {
-        let registerResult: Driver<NetworkingResult>
-        let registerInfoCheck: Driver<Bool>
+    struct Output {
+        let result: Driver<NetworkingResult>
+        let infoCheck: Driver<Bool>
     }
     
-    func transform(input: RegisterVM.input) -> RegisterVM.output {
+    func transform(input: RegisterVM.Input) -> RegisterVM.Output {
         let info = Driver.combineLatest(input.id, input.pw, input.name) {($0,$1,$2)}
         
         let infoCheck = input.registerTaps.asObservable().withLatestFrom(info)
@@ -43,6 +43,6 @@ final class RegisterVM: ViewModelType {
             }.asDriver(onErrorJustReturn: .failure)
         
         
-        return output(registerResult: result, registerInfoCheck: infoCheck)
+        return Output(result: result, infoCheck: infoCheck)
     }
 }
