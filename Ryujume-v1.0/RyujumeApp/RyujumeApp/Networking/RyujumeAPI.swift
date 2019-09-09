@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 import RxSwift
 import RxCocoa
 
@@ -23,13 +24,13 @@ class AuthAPI: AuthAPIProvider {
             })
     }
     
-    func postRegister(userName: String, id: String, pw: String) -> Observable<Bool> {
+    func postRegister(userName: String, id: String, pw: String) -> Observable<NetworkingResult> {
         let params = ["userName" : userName, "id" : id, "pw" : pw]
         
         return httpClient.post(url: RyujumeURL.postRegister.getPath(), params: params)
-            .map({ (data) -> Bool in
-                guard data != nil else { return false }
-                return true
+            .map({ (data) -> NetworkingResult in
+                guard data != nil else { return .failure }
+                return .success
             })
     }
     
@@ -38,13 +39,13 @@ class AuthAPI: AuthAPIProvider {
 class MyPageAPI: MyPageAPIProvider {
     let httpClient = HTTPClient()
     
-    func postUpdateProfileImg(identityImg: String) -> Observable<Bool> {
+    func postUpdateProfileImg(identityImg: String) -> Observable<NetworkingResult> {
         let params = ["profileImg" : identityImg]
         
         return httpClient.post(url: RyujumeURL.postUpdateProfileImg.getPath(), params: params)
-            .map({ (data) -> Bool in
-                guard data != nil else { return false }
-                return true
+            .map({ (data) -> NetworkingResult in
+                guard data != nil else { return .failure }
+                return .success
             })
     }
     
@@ -102,12 +103,12 @@ class MainAPI: MainAPIProvider {
             })
     }
     
-    func postLikePress(ryujumeId: String, isLiked: Bool) -> Observable<Bool> {
+    func postLikePress(ryujumeId: String, isLiked: Bool) -> Observable<NetworkingResult> {
         let params: [String : Any] = ["ryujumeId" : ryujumeId, "likeStatus" : isLiked]
         return httpClient.post(url: RyujumeURL.postLikePress.getPath(), params: params)
-            .map({ (data) -> Bool in
-                guard data != nil else { return false }
-                return true
+            .map({ (data) -> NetworkingResult in
+                guard data != nil else { return .failure }
+                return .success
             })
     }
 }
