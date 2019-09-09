@@ -6,16 +6,17 @@
 //  Copyright © 2019 baby1234. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-struct Token {
-    static var token: String? {
-        get {
-            return UserDefaults.standard.string(forKey: "Token")
-        }
-        
-        set {
-            UserDefaults.standard.set(newValue, forKey: "Token")
-        }
+extension UIViewController {
+    
+    func presentOKAlert(title: String?, message: String?) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func goPreviousVC() {
+        self.navigationController?.popViewController(animated: true)
     }
 }
