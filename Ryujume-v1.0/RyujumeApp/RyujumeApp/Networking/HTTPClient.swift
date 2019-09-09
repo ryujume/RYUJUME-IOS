@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 import RxSwift
 import RxCocoa
 
@@ -15,7 +16,7 @@ final class HTTPClient: HTTPClientProvider {
     func get(url: String) -> Observable<Data?> {
         guard let url = URL(string: url) else { return Observable.empty() }
         var request = URLRequest(url: url)
-        request.addValue("Content-Type", forHTTPHeaderField: "application/json")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         if let token = Token.token { request.addValue( token, forHTTPHeaderField: "x-access-token") }
         
         return URLSession.shared.rx.data(request: request).map({ Optional($0) }).catchErrorJustReturn(nil)
@@ -24,7 +25,7 @@ final class HTTPClient: HTTPClientProvider {
     func post(url: String, params: [String : Any]) -> Observable<Data?> {
         guard let url = URL(string: url) else { return Observable.empty() }
         var request = URLRequest(url: url)
-        request.addValue("Content-Type", forHTTPHeaderField: "application/json")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         if let token = Token.token { request.addValue( token, forHTTPHeaderField: "x-access-token") }
         request.httpMethod = "POST"
         
@@ -41,7 +42,7 @@ final class HTTPClient: HTTPClientProvider {
     func put(url: String, params: [String : Any]) -> Observable<Data?> {
         guard let url = URL(string: url) else { return Observable.empty() }
         var request = URLRequest(url: url)
-        request.addValue("Content-Type", forHTTPHeaderField: "application/json")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         if let token = Token.token { request.addValue( token, forHTTPHeaderField: "x-access-token") }
         request.httpMethod = "PUT"
         
