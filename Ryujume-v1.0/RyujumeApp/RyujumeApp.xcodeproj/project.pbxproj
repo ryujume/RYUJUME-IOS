@@ -35,6 +35,15 @@
 		371366482314BA0A0030F72B /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371366472314BA0A0030F72B /* Provider.swift */; };
 		3713664E2314BAD50030F72B /* RyujumeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713664D2314BAD50030F72B /* RyujumeAPI.swift */; };
 		371366502314CC710030F72B /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713664F2314CC710030F72B /* Base.swift */; };
+		37B7BF4E2322660D00402EA3 /* RegisterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7BF4D2322660D00402EA3 /* RegisterVM.swift */; };
+		37B7BF502322661900402EA3 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7BF4F2322661900402EA3 /* LoginVM.swift */; };
+		37B7BF522322662300402EA3 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7BF512322662300402EA3 /* MainVM.swift */; };
+		37B7BF542322663100402EA3 /* DetailRyujumeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7BF532322663100402EA3 /* DetailRyujumeVM.swift */; };
+		37B7BF562322664200402EA3 /* LikedRyujumeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7BF552322664200402EA3 /* LikedRyujumeVM.swift */; };
+		37B7BF582322665100402EA3 /* MyRyujumeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7BF572322665100402EA3 /* MyRyujumeVM.swift */; };
+		37B7BF5A23242DE600402EA3 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7BF5923242DE600402EA3 /* Token.swift */; };
+		37B7BF5C23242E2600402EA3 /* NetworkingResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7BF5B23242E2600402EA3 /* NetworkingResult.swift */; };
+		37B7BF5F23293A4C00402EA3 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 37B7BF5E23293A4C00402EA3 /* .swiftlint.yml */; };
 		5E5F8E31A32B2492F79D30DB /* Pods_RyujumeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D921DD22F7D4B5579353B6 /* Pods_RyujumeApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +78,15 @@
 		371366472314BA0A0030F72B /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		3713664D2314BAD50030F72B /* RyujumeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyujumeAPI.swift; sourceTree = "<group>"; };
 		3713664F2314CC710030F72B /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		37B7BF4D2322660D00402EA3 /* RegisterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVM.swift; sourceTree = "<group>"; };
+		37B7BF4F2322661900402EA3 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		37B7BF512322662300402EA3 /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		37B7BF532322663100402EA3 /* DetailRyujumeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRyujumeVM.swift; sourceTree = "<group>"; };
+		37B7BF552322664200402EA3 /* LikedRyujumeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedRyujumeVM.swift; sourceTree = "<group>"; };
+		37B7BF572322665100402EA3 /* MyRyujumeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRyujumeVM.swift; sourceTree = "<group>"; };
+		37B7BF5923242DE600402EA3 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		37B7BF5B23242E2600402EA3 /* NetworkingResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingResult.swift; sourceTree = "<group>"; };
+		37B7BF5E23293A4C00402EA3 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C2D921DD22F7D4B5579353B6 /* Pods_RyujumeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RyujumeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31FCCBC43484B4C95432FA1 /* Pods-RyujumeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RyujumeApp.debug.xcconfig"; path = "Target Support Files/Pods-RyujumeApp/Pods-RyujumeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CC2C50CC623866EB7FED5161 /* Pods-RyujumeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RyujumeApp.release.xcconfig"; path = "Target Support Files/Pods-RyujumeApp/Pods-RyujumeApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +107,7 @@
 		371365DF2310D1D00030F72B = {
 			isa = PBXGroup;
 			children = (
+				37B7BF5E23293A4C00402EA3 /* .swiftlint.yml */,
 				371365EA2310D1D00030F72B /* RyujumeApp */,
 				371365E92310D1D00030F72B /* Products */,
 				3E95FCFAAA539FF771D9D241 /* Pods */,
@@ -146,6 +165,12 @@
 		3713660023113F760030F72B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				37B7BF4D2322660D00402EA3 /* RegisterVM.swift */,
+				37B7BF4F2322661900402EA3 /* LoginVM.swift */,
+				37B7BF512322662300402EA3 /* MainVM.swift */,
+				37B7BF532322663100402EA3 /* DetailRyujumeVM.swift */,
+				37B7BF552322664200402EA3 /* LikedRyujumeVM.swift */,
+				37B7BF572322665100402EA3 /* MyRyujumeVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -192,6 +217,8 @@
 			children = (
 				3713663F2314B7D10030F72B /* ViewModelType.swift */,
 				3713664F2314CC710030F72B /* Base.swift */,
+				37B7BF5923242DE600402EA3 /* Token.swift */,
+				37B7BF5B23242E2600402EA3 /* NetworkingResult.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -225,6 +252,7 @@
 				371365E52310D1D00030F72B /* Frameworks */,
 				371365E62310D1D00030F72B /* Resources */,
 				D776F6B47298F12CD04E330B /* [CP] Embed Pods Frameworks */,
+				37B7BF5D232938B700402EA3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -273,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B7BF5F23293A4C00402EA3 /* .swiftlint.yml in Resources */,
 				3713661E231141FC0030F72B /* SCDream8.otf in Resources */,
 				37136618231141FC0030F72B /* SCDream2.otf in Resources */,
 				371365F62310D1D20030F72B /* LaunchScreen.storyboard in Resources */,
@@ -291,6 +320,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		37B7BF5D232938B700402EA3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
 		C83E50AC345AEAE12AEADE0A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,19 +383,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B7BF5C23242E2600402EA3 /* NetworkingResult.swift in Sources */,
 				371366362311429C0030F72B /* LoginVC.swift in Sources */,
 				371366332311429C0030F72B /* RegisterVC.swift in Sources */,
 				3713662B2311426D0030F72B /* LoginModel.swift in Sources */,
 				371366392311429C0030F72B /* MyRyujumeVC.swift in Sources */,
+				37B7BF562322664200402EA3 /* LikedRyujumeVM.swift in Sources */,
 				371366402314B7D10030F72B /* ViewModelType.swift in Sources */,
 				371366272311426D0030F72B /* SimpleRyujumesModel.swift in Sources */,
 				371366482314BA0A0030F72B /* Provider.swift in Sources */,
+				37B7BF582322665100402EA3 /* MyRyujumeVM.swift in Sources */,
+				37B7BF542322663100402EA3 /* DetailRyujumeVM.swift in Sources */,
 				3713663C231424650030F72B /* RyujumeURL.swift in Sources */,
 				371366502314CC710030F72B /* Base.swift in Sources */,
 				371366372311429C0030F72B /* DetailRyujumeVC.swift in Sources */,
 				371366342311429C0030F72B /* MainVC.swift in Sources */,
 				371366382311429C0030F72B /* LikedRyujumeVC.swift in Sources */,
+				37B7BF522322662300402EA3 /* MainVM.swift in Sources */,
 				3713663E231425030030F72B /* HTTPClient.swift in Sources */,
+				37B7BF4E2322660D00402EA3 /* RegisterVM.swift in Sources */,
+				37B7BF502322661900402EA3 /* LoginVM.swift in Sources */,
+				37B7BF5A23242DE600402EA3 /* Token.swift in Sources */,
 				371365EC2310D1D00030F72B /* AppDelegate.swift in Sources */,
 				3713664E2314BAD50030F72B /* RyujumeAPI.swift in Sources */,
 				371366282311426D0030F72B /* RyujumeModel.swift in Sources */,
