@@ -8,13 +8,11 @@
 
 import Foundation
 
-
 struct Token {
     static var token: String? {
         get {
             return UserDefaults.standard.string(forKey: "Token")
         }
-        
         set {
             UserDefaults.standard.set(newValue, forKey: "Token")
         }

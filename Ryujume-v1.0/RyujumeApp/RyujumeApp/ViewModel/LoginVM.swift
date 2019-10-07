@@ -12,35 +12,34 @@ import RxSwift
 import RxCocoa
 
 final class LoginVM: ViewModelType {
+
+    private let api = AuthAPI()
+
     struct Input {
-        let id: Driver<String>
-        let pw: Driver<String>
+        let userID: Driver<String>
+        let userPW: Driver<String>
         let loginTaps: Signal<Void>
     }
-    
+
     struct Output {
         let result: Driver<NetworkingResult>
         let infoCheck: Driver<Bool>
     }
-    
+
     func transform(input: LoginVM.Input) -> LoginVM.Output {
-        let info = Driver.combineLatest(input.id, input.pw) {($0,$1)}
-        
+        let info = Driver.combineLatest(input.userID, input.userPW) {($0, $1)}
+
         let infoCheck = input.loginTaps.asObservable().withLatestFrom(info)
-            .flatMapLatest { (id, pw) -> Observable<Bool> in
-                if id.count > 3 && pw.count > 3 {
-                    return Observable.just(true)
-                }
+            .flatMapLatest { (userID, userPW) -> Observable<Bool> in
+                if userID.count > 3 && userPW.count > 3 { return Observable.just(true) }
                 return Observable.just(false)
             }.asDriver(onErrorJustReturn: false)
-        
+
         let result = input.loginTaps.asObservable().withLatestFrom(info)
-            .flatMapLatest { (info) -> Observable<NetworkingResult> in
-                let (id,pw) = info
-                return AuthAPI().postLogin(id: id, pw: pw).map({ (loginModel) -> NetworkingResult in
-                    guard let loginModel = loginModel else {
-                    return .failure
-                    }
+            .flatMapLatest { [weak self] (userID, userPW) -> Observable<NetworkingResult> in
+                guard let strongSelf = self else { return Observable.just(.failure)}
+                return strongSelf.api.postLogin(userID: userID, userPW: userPW).map({ (loginModel) -> NetworkingResult in
+                    guard let loginModel = loginModel else { return .failure }
                     Token.token = loginModel.token
                     return .success
                 })

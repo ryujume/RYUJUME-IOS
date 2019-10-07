@@ -13,52 +13,54 @@ import RxCocoa
 
 class AuthAPI: AuthAPIProvider {
     let httpClient = HTTPClient()
-    
-    func postLogin(id: String, pw: String) -> Observable<LoginModel?> {
-        let params = ["id" : id, "pw" : pw]
-        
+
+    func postLogin(userID: String, userPW: String) -> Observable<LoginModel?> {
+        let params = ["id": userID, "pw": userPW]
         return httpClient.post(url: RyujumeURL.postLogin.getPath(), params: params)
             .map({ data -> LoginModel? in
                 guard let data = data, let response = try? JSONDecoder().decode(LoginModel.self, from: data) else { return nil }
                 return response
             })
     }
-    
-    func postRegister(userName: String, id: String, pw: String) -> Observable<NetworkingResult> {
-        let params = ["userName" : userName, "id" : id, "pw" : pw]
-        
+
+    func postRegister(userID: String, userPW: String, userName: String) -> Observable<NetworkingResult> {
+        let params = ["id": userID, "pw": userPW, "userName": userName]
         return httpClient.post(url: RyujumeURL.postRegister.getPath(), params: params)
             .map({ (data) -> NetworkingResult in
                 guard data != nil else { return .failure }
                 return .success
             })
     }
-    
 }
 
 class MyPageAPI: MyPageAPIProvider {
     let httpClient = HTTPClient()
-    
+
     func postUpdateProfileImg(identityImg: String) -> Observable<NetworkingResult> {
-        let params = ["profileImg" : identityImg]
-        
+        let params = ["profileImg": identityImg]
         return httpClient.post(url: RyujumeURL.postUpdateProfileImg.getPath(), params: params)
             .map({ (data) -> NetworkingResult in
                 guard data != nil else { return .failure }
                 return .success
             })
     }
-    
-    func putUpdateInfo(phoneNumber: String, email: String, simpleIntroduce: String, career: [Career], academicBackground: [AcademicBackground], prize: [Prize], foreignLanguage: [ForeignLanguage], link: [String]) -> Observable<RyujumeModel?> {
-        let params: [String : Any] = ["phoneNumber" : phoneNumber, "email" : email, "simpleInfo" : simpleIntroduce, "career" : career, "academicBack" : academicBackground, "prize" : prize, "language" : foreignLanguage, "link" : link]
-        
+
+    func putUpdateInfo(ryujume: RyujumeModel) -> Observable<RyujumeModel?> {
+        let params: [String: Any] = ["phoneNumber": ryujume.phoneNumber ?? "",
+                                     "email": ryujume.email ?? "",
+                                     "simpleInfo": ryujume.simpleIntroduce ?? "",
+                                     "career": ryujume.career ?? [],
+                                     "academicBack": ryujume.academicBackground ?? [],
+                                     "prize": ryujume.academicBackground ?? [],
+                                     "language": ryujume.foreignLanguage ?? [],
+                                     "link": ryujume.link ?? []]
         return httpClient.put(url: RyujumeURL.putUpdateInfo.getPath(), params: params)
             .map({ (data) -> RyujumeModel? in
                 guard let data = data, let response = try? JSONDecoder().decode(RyujumeModel.self, from: data) else { return nil }
                 return response
             })
     }
-    
+
     func getReadLikeInfo() -> Observable<[SimpleRyujumesModel]?> {
         return httpClient.get(url: RyujumeURL.getLikeInfo.getPath())
             .map({ (data) -> [SimpleRyujumesModel]? in
@@ -66,7 +68,7 @@ class MyPageAPI: MyPageAPIProvider {
                 return response
             })
     }
-    
+
     func getReadMyInfo() -> Observable<RyujumeModel?> {
         return httpClient.get(url: RyujumeURL.getReadMyInfo.getPath())
             .map({ (data) -> RyujumeModel? in
@@ -78,7 +80,7 @@ class MyPageAPI: MyPageAPIProvider {
 
 class MainAPI: MainAPIProvider {
     let httpClient = HTTPClient()
-    
+
     func getLatestInfo() -> Observable<[SimpleRyujumesModel]?> {
         return httpClient.get(url: RyujumeURL.getLatestInfo.getPath())
             .map({ (data) -> [SimpleRyujumesModel]? in
@@ -86,7 +88,7 @@ class MainAPI: MainAPIProvider {
                 return response
             })
     }
-    
+
     func getLikeInfo() -> Observable<[SimpleRyujumesModel]?> {
         return httpClient.get(url: RyujumeURL.getLikeInfo.getPath())
             .map({ (data) -> [SimpleRyujumesModel]? in
@@ -94,17 +96,17 @@ class MainAPI: MainAPIProvider {
                 return response
             })
     }
-    
+
     func getDetailRyujume(ryujumeId: String) -> Observable<RyujumeModel?> {
-        return httpClient.get(url: RyujumeURL.getDetail(ryujumeId: ryujumeId).getPath())
+        return httpClient.get(url: RyujumeURL.getDetail(ryujumeID: ryujumeId).getPath())
             .map({ (data) -> RyujumeModel? in
                 guard let data = data, let response = try? JSONDecoder().decode(RyujumeModel.self, from: data) else { return nil }
                 return response
             })
     }
-    
+
     func postLikePress(ryujumeId: String, isLiked: Bool) -> Observable<NetworkingResult> {
-        let params: [String : Any] = ["ryujumeId" : ryujumeId, "likeStatus" : isLiked]
+        let params: [String: Any] = ["ryujumeId": ryujumeId, "likeStatus": isLiked]
         return httpClient.post(url: RyujumeURL.postLikePress.getPath(), params: params)
             .map({ (data) -> NetworkingResult in
                 guard data != nil else { return .failure }

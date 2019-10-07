@@ -34,7 +34,6 @@ struct RyujumeModel: Codable {
         case link
         case isLiked = "likeStatus"
     }
-    
 }
 
 struct Career: Codable {

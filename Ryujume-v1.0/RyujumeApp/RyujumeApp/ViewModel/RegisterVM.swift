@@ -8,41 +8,38 @@
 
 import Foundation
 
-import RxCocoa
 import RxSwift
+import RxCocoa
 
 final class RegisterVM: ViewModelType {
-    
+    private let api = AuthAPI()
+
     struct Input {
-        let id: Driver<String>
-        let pw: Driver<String>
-        let name: Driver<String>
+        let userID: Driver<String>
+        let userPW: Driver<String>
+        let userName: Driver<String>
         let registerTaps: Signal<Void>
     }
-    
+
     struct Output {
         let result: Driver<NetworkingResult>
         let infoCheck: Driver<Bool>
     }
-    
+
     func transform(input: RegisterVM.Input) -> RegisterVM.Output {
-        let info = Driver.combineLatest(input.id, input.pw, input.name) {($0,$1,$2)}
-        
+        let info = Driver.combineLatest(input.userID, input.userPW, input.userName) {($0, $1, $2)}
+
         let infoCheck = input.registerTaps.asObservable().withLatestFrom(info)
-            .flatMapLatest { (id, pw, name) -> Observable<Bool> in
-                if id.count > 3 && pw.count > 3 && name.count > 3 {
-                    return Observable.just(true)
-                }
+            .flatMapLatest { (userID, userPW, userName) -> Observable<Bool> in
+                if userID.count > 3 && userPW.count > 3 && userName.count > 3 { return Observable.just(true) }
                 return Observable.just(false)
             }.asDriver(onErrorJustReturn: false)
-        
+
         let result = input.registerTaps.asObservable().withLatestFrom(info)
-            .flatMapLatest { (info) -> Observable<NetworkingResult> in
-                let (id,pw,name) = info
-                return AuthAPI().postRegister(userName: name, id: id, pw: pw)
+            .flatMapLatest { [weak self] (userID, userPW, userName) -> Observable<NetworkingResult> in
+                guard let strongSelf = self else { return Observable.just(.failure)}
+                return strongSelf.api.postRegister(userID: userID, userPW: userPW, userName: userName)
             }.asDriver(onErrorJustReturn: .failure)
-        
-        
         return Output(result: result, infoCheck: infoCheck)
     }
 }

@@ -11,15 +11,14 @@ import UIKit
 class LikedRyujumeVC: UIViewController {
 
     @IBOutlet weak var likedCollectionView: UICollectionView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
     }
-    
 }
 
 class LikedCell: UICollectionViewCell {

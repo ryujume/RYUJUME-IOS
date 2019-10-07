@@ -18,11 +18,9 @@ public enum RyujumeURL {
     case getLatestInfo
     case getLikeInfo
     case postLikePress
-    case getDetail(ryujumeId: String)
-    
+    case getDetail(ryujumeID: String)
     func getPath() -> String {
         let baseURL = "http://54.180.81.160:3000/api"
-        
         switch self {
         case .postRegister:
             return baseURL + "/auth/register"

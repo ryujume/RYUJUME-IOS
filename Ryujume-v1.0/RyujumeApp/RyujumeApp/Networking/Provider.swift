@@ -12,13 +12,13 @@ import RxSwift
 import RxCocoa
 
 protocol AuthAPIProvider {
-    func postLogin(id: String, pw: String) -> Observable<LoginModel?>
-    func postRegister(userName: String, id: String, pw: String) -> Observable<NetworkingResult>
+    func postLogin(userID: String, userPW: String) -> Observable<LoginModel?>
+    func postRegister(userID: String, userPW: String, userName: String) -> Observable<NetworkingResult>
 }
 
 protocol MyPageAPIProvider {
     func postUpdateProfileImg(identityImg: String) -> Observable<NetworkingResult>
-    func putUpdateInfo(phoneNumber: String, email: String, simpleIntroduce: String, career: [Career], academicBackground: [AcademicBackground], prize: [Prize], foreignLanguage: [ForeignLanguage], link: [String]) -> Observable<RyujumeModel?>
+    func putUpdateInfo(ryujume: RyujumeModel) -> Observable<RyujumeModel?>
     func getReadLikeInfo() -> Observable<[SimpleRyujumesModel]?>
     func getReadMyInfo() -> Observable<RyujumeModel?>
 }
