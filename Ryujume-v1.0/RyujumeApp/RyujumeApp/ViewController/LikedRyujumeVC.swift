@@ -25,7 +25,7 @@ class LikedCell: UICollectionViewCell {
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var simpleIntroduceTxtView: UITextView!
     @IBOutlet weak var likeCountLbl: UILabel!
-    
+
     func configure(model: SimpleRyujumesModel) {
         nameLbl.text = model.userName
         simpleIntroduceTxtView.text = model.simpleIntroduce

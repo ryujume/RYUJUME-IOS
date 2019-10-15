@@ -29,3 +29,12 @@ extension UIColor {
         )
     }
 }
+
+class RoundTxtView: UITextView {
+    override func awakeFromNib() {
+        layer.cornerRadius = frame.height / 8
+        layer.shadowColor = UIColor.black.withAlphaComponent(0.3).cgColor
+        layer.shadowOpacity = 1
+        layer.shadowOffset = CGSize.init(width: 1, height: 1)
+    }
+}

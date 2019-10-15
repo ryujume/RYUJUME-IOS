@@ -13,21 +13,21 @@ import RxCocoa
 
 protocol AuthAPIProvider {
     func postLogin(userID: String, userPW: String) -> Observable<LoginModel?>
-    func postRegister(userID: String, userPW: String, userName: String) -> Observable<NetworkingResult>
+    func postRegister(userID: String, userPW: String, userName: String) -> Observable<Result>
 }
 
 protocol MyPageAPIProvider {
-    func postUpdateProfileImg(identityImg: String) -> Observable<NetworkingResult>
-    func putUpdateInfo(ryujume: RyujumeModel) -> Observable<RyujumeModel?>
+    func postUpdateProfileImg(identityImg: String) -> Observable<Result>
+    func putUpdateInfo(ryujume: MyRyujumeModel) -> Observable<MyRyujumeModel?>
     func getReadLikeInfo() -> Observable<[SimpleRyujumesModel]?>
-    func getReadMyInfo() -> Observable<RyujumeModel?>
+    func getReadMyInfo() -> Observable<MyRyujumeModel?>
 }
 
 protocol MainAPIProvider {
     func getLatestInfo() -> Observable<[SimpleRyujumesModel]?>
     func getLikeInfo() -> Observable<[SimpleRyujumesModel]?>
     func getDetailRyujume(ryujumeId: String) -> Observable<RyujumeModel?>
-    func postLikePress(ryujumeId: String, isLiked: Bool) -> Observable<NetworkingResult>
+    func postLikePress(ryujumeId: String, isLiked: Bool) -> Observable<Result>
 }
 
 protocol HTTPClientProvider {

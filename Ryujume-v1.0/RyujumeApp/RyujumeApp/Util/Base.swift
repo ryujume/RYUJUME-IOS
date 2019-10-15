@@ -41,18 +41,21 @@ extension UIViewController {
 
 extension UITextField {
     func effectActivation(underlineView: UIView, disposeBag: DisposeBag) {
+        underlineView.translatesAutoresizingMaskIntoConstraints = false
+
         self.rx.controlEvent(.editingDidBegin).subscribe { (_) in
             UIView.animate(withDuration: 0.5, animations: {
                 underlineView.backgroundColor = Color.main1
                 underlineView.tintColor = Color.main1
-                underlineView.heightAnchor.constraint(equalToConstant: 2)
+                underlineView.heightAnchor.constraint(equalToConstant: 2).isActive = true
             })
             }.disposed(by: disposeBag)
+
         self.rx.controlEvent(.editingDidEnd).subscribe { (_) in
             UIView.animate(withDuration: 0.5, animations: {
                 underlineView.backgroundColor = Color.main3
                 underlineView.tintColor = Color.main3
-                underlineView.heightAnchor.constraint(equalToConstant: 0.5)
+                underlineView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
             })
             }.disposed(by: disposeBag)
     }

@@ -48,20 +48,37 @@ class MyRyujumeVC: UIViewController {
     @IBOutlet weak var addLinkBtn: UIButton!
 
     private let disposeBag = DisposeBag()
+    private let viewModel = MyRyujumeVM()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        bindViewModel()
+//        bindViewModel()
         subscribeUIEvent()
         emailTxtField.effectActivation(underlineView: emailUnderlineView, disposeBag: disposeBag)
         phoneNumberTxtField.effectActivation(underlineView: phoneNumberUnderlineView, disposeBag: disposeBag)
     }
 
     private func bindViewModel() {
+        let career = BehaviorRelay<[MyCareer]?>(value: nil)
+        let academicBackground = BehaviorRelay<[MyAcademicBackground]?>(value: nil)
+        let prize = BehaviorRelay<[MyPrize]?>(value: nil)
+        let foreignLangyage = BehaviorRelay<[MyForeignLanguage]?>(value: nil)
+        let link = BehaviorRelay<[String]?>(value: nil)
+
+
+    }
+
+    private func career() {
+        var myCareer = MyCareer()
         careerStackView.arrangedSubviews.forEach { (view) in
-            
+            guard let view = view as? MyCareerView else { return }
+            let careerInfo =
+            careerInfo
         }
     }
+}
+
+extension MyRyujumeVC {
 
     private func subscribeUIEvent() {
         addCareerBtn.rx.tap.subscribe { [unowned self] (_) in
@@ -95,24 +112,40 @@ class MyRyujumeVC: UIViewController {
 
     private func addAdditionalView(stackView: UIStackView, viewType: ViewType) {
         let idx = stackView.arrangedSubviews.count - 1
-        let newView = AdditionalView(stackView: stackView, viewType: viewType)
+        var newView: XibView
 
+        switch viewType {
+        case .career:
+            newView = MyCareerView()
+            if let view = newView as? MyCareerView {
+                view.startDateBtn.addTarget(self, action: #selector(dateAndLevelBtnTaps), for: .touchUpInside)
+                view.endDateBtn.addTarget(self, action: #selector(dateAndLevelBtnTaps), for: .touchUpInside)
+            }
+        case .academicBackground:
+            newView = MyAcademicBackgroundView()
+            if let view = newView as? MyAcademicBackgroundView {
+                view.startDateBtn.addTarget(self, action: #selector(dateAndLevelBtnTaps), for: .touchUpInside)
+                view.endDateBtn.addTarget(self, action: #selector(dateAndLevelBtnTaps), for: .touchUpInside)
+            }
+        case .prize:
+            newView = MyPrizeView()
+            if let view = newView as? MyPrizeView {
+                view.prizeDateBtn.addTarget(self, action: #selector(dateAndLevelBtnTaps), for: .touchUpInside)
+            }
+        case .foreignLanguage:
+            newView = MyForeignLanguageView()
+            if let view = newView as? MyForeignLanguageView {
+                view.levelBtn.addTarget(self, action: #selector(dateAndLevelBtnTaps), for: .touchUpInside)
+            }
+        case .link:
+            newView = MyLinkView()
+        }
+
+        newView.initUI()
         newView.isHidden = true
         stackView.insertArrangedSubview(newView, at: idx)
         UIView.animate(withDuration: 0) { newView.isHidden = false }
 
-        newView.deleteBtn.addTarget(self, action: #selector(deleteBtnTaps), for: .touchUpInside)
-        newView.titleTxtField.effectActivation(underlineView: newView.titleUnderlineView, disposeBag: disposeBag)
-
-        switch viewType {
-        case .career, .academicBackground:
-            newView.startDateBtn.addTarget(self, action: #selector(dateAndLevelBtnTaps), for: .touchUpInside)
-            newView.statusBtn.addTarget(self, action: #selector(statusBtnTaps), for: .touchUpInside)
-            newView.endDateOrLevelBtn.addTarget(self, action: #selector(dateAndLevelBtnTaps), for: .touchUpInside)
-        case .prize, .foreignLanguage:
-            newView.endDateOrLevelBtn.addTarget(self, action: #selector(dateAndLevelBtnTaps), for: .touchUpInside)
-        default: break
-        }
     }
 
     @objc func dateAndLevelBtnTaps(sender: UIButton) {
@@ -145,20 +178,4 @@ class MyRyujumeVC: UIViewController {
         }
     }
 
-    @objc func deleteBtnTaps(sender: UIButton) {
-        guard let view = sender.superview else { return }
-        UIView.animate(withDuration: 0.1,
-                       animations: { view.isHidden = true },
-                       completion: { (_) in view.removeFromSuperview() })
-    }
-
-    @objc func statusBtnTaps(sender: UIButton) {
-        if sender.isSelected == false {
-            sender.setTitle("O", for: .normal)
-            sender.isSelected = true
-        } else {
-            sender.setTitle("X", for: .normal)
-            sender.isSelected = false
-        }
-    }
 }

@@ -46,7 +46,7 @@ class LoginVC: UIViewController {
                                   loginTaps: doneBtn.rx.tap.asSignal())
         let output = viewModel.transform(input: input)
 
-        output.infoCheck.filter { $0 == false }
+        output.infoCheck.filter { $0 == .failure }
             .drive(onNext: {[unowned self] _ in self.showCheckAlert(title: "로그인 정보 확인", message: "모두 4글자 이상 입력", completion: nil)})
             .disposed(by: disposeBag)
 

@@ -11,15 +11,15 @@ import Foundation
 struct RyujumeModel: Codable {
     let userName: String
     let identityImg: String?
-    let phoneNumber: String?
-    let email: String?
-    let simpleIntroduce: String?
+    let phoneNumber: String
+    let email: String
+    let simpleIntroduce: String
     let career: [Career]?
     let academicBackground: [AcademicBackground]?
     let prize: [Prize]?
     let foreignLanguage: [ForeignLanguage]?
     let link: [String]?
-    let isLiked: Bool?
+    let isLiked: Bool
     
     enum CodingKeys: String, CodingKey {
         case userName

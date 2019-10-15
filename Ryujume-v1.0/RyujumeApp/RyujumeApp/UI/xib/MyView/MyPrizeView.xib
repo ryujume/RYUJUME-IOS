@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyPrizeView" customModule="RyujumeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteBtn" destination="oNI-bs-BF4" id="H1a-bB-FQX"/>
+                <outlet property="prizeDateBtn" destination="OJt-z7-AYt" id="Cbd-X3-lwE"/>
+                <outlet property="prizeTxtField" destination="qoL-wj-63q" id="IEW-ix-IEB"/>
+                <outlet property="underlineView" destination="Pzn-eE-LSd" id="dI2-iw-dAu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="nDM-je-yIN">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="수상명*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qoL-wj-63q">
+                    <rect key="frame" x="8" y="8" width="152" height="17"/>
+                    <color key="textColor" red="0.96862745100000003" green="0.4039215686" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pzn-eE-LSd">
+                    <rect key="frame" x="8" y="32.5" width="152" height="0.5"/>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.6588235294" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Y8N-It-YC9"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNI-bs-BF4">
+                    <rect key="frame" x="282" y="4" width="30" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="삭제">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJt-z7-AYt">
+                    <rect key="frame" x="8" y="41" width="71" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="YYYY.MM.DD">
+                        <color key="titleColor" red="1" green="0.57254901960000004" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qoL-wj-63q" firstAttribute="leading" secondItem="xVM-6x-WVF" secondAttribute="leading" constant="8" id="20V-42-jRp"/>
+                <constraint firstItem="oNI-bs-BF4" firstAttribute="top" secondItem="nDM-je-yIN" secondAttribute="top" constant="4" id="5oi-Sg-wUt"/>
+                <constraint firstItem="Pzn-eE-LSd" firstAttribute="bottom" secondItem="qoL-wj-63q" secondAttribute="bottom" constant="8" id="AOt-A5-eW6"/>
+                <constraint firstItem="xVM-6x-WVF" firstAttribute="bottom" secondItem="OJt-z7-AYt" secondAttribute="bottom" constant="4" id="DIc-qx-rXR"/>
+                <constraint firstItem="Pzn-eE-LSd" firstAttribute="leading" secondItem="qoL-wj-63q" secondAttribute="leading" id="KnZ-Tg-LVx"/>
+                <constraint firstItem="qoL-wj-63q" firstAttribute="top" secondItem="nDM-je-yIN" secondAttribute="top" constant="8" id="L8i-KK-Z8A"/>
+                <constraint firstItem="OJt-z7-AYt" firstAttribute="leading" secondItem="xVM-6x-WVF" secondAttribute="leading" constant="8" id="Ll4-nT-Mb8"/>
+                <constraint firstItem="OJt-z7-AYt" firstAttribute="top" secondItem="Pzn-eE-LSd" secondAttribute="bottom" constant="8" id="TJJ-gM-yCl"/>
+                <constraint firstItem="xVM-6x-WVF" firstAttribute="trailing" secondItem="oNI-bs-BF4" secondAttribute="trailing" constant="8" id="UoX-ol-ybg"/>
+                <constraint firstItem="qoL-wj-63q" firstAttribute="trailing" secondItem="nDM-je-yIN" secondAttribute="centerX" id="daH-zB-lWm"/>
+                <constraint firstItem="Pzn-eE-LSd" firstAttribute="trailing" secondItem="qoL-wj-63q" secondAttribute="trailing" id="jK2-uQ-LAo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="xVM-6x-WVF"/>
+            <point key="canvasLocation" x="55.072463768115945" y="274.88839285714283"/>
+        </view>
+    </objects>
+</document>

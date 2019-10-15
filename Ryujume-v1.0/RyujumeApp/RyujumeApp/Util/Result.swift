@@ -8,18 +8,7 @@
 
 import Foundation
 
-enum NetworkingResult {
+enum Result {
     case failure
-    case success
-}
-
-enum SaveResult {
-    case failure
-    case success
-}
-
-enum FilterResult {
-    case requiredInfoFailure
-    case optionalInfoFailure
     case success
 }

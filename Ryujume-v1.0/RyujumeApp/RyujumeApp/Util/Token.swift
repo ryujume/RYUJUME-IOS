@@ -17,4 +17,13 @@ struct Token {
             UserDefaults.standard.set(newValue, forKey: "Token")
         }
     }
+
+    static var userName: String? {
+        get {
+            return UserDefaults.standard.string(forKey: "UserName")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "UserName")
+        }
+    }
 }

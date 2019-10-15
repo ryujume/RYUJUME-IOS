@@ -22,21 +22,21 @@ final class RegisterVM: ViewModelType {
     }
 
     struct Output {
-        let result: Driver<NetworkingResult>
-        let infoCheck: Driver<Bool>
+        let result: Driver<Result>
+        let infoCheck: Driver<Result>
     }
 
     func transform(input: RegisterVM.Input) -> RegisterVM.Output {
         let info = Driver.combineLatest(input.userID, input.userPW, input.userName) {($0, $1, $2)}
 
         let infoCheck = input.registerTaps.asObservable().withLatestFrom(info)
-            .flatMapLatest { (userID, userPW, userName) -> Observable<Bool> in
-                if userID.count > 3 && userPW.count > 3 && userName.count > 3 { return Observable.just(true) }
-                return Observable.just(false)
-            }.asDriver(onErrorJustReturn: false)
+            .flatMapLatest { (userID, userPW, userName) -> Observable<Result> in
+                if userID.count > 3 && userPW.count > 3 && userName.count > 3 { return Observable.just(.success) }
+                return Observable.just(.failure)
+        }.asDriver(onErrorJustReturn: .failure)
 
         let result = input.registerTaps.asObservable().withLatestFrom(info)
-            .flatMapLatest { [weak self] (userID, userPW, userName) -> Observable<NetworkingResult> in
+            .flatMapLatest { [weak self] (userID, userPW, userName) -> Observable<Result> in
                 guard let strongSelf = self else { return Observable.just(.failure)}
                 return strongSelf.api.postRegister(userID: userID, userPW: userPW, userName: userName)
             }.asDriver(onErrorJustReturn: .failure)

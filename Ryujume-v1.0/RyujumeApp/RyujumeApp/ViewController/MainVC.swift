@@ -71,7 +71,7 @@ class MainCell: UICollectionViewCell {
         simpleIntroduceTxtView.text = simpleInfo.simpleIntroduce
         likeCountLbl.text = String(simpleInfo.likeCount)
     }
-    
+
     override func awakeFromNib() {
         self.contentView.layer.cornerRadius = 10
     }
