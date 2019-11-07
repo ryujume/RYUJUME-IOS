@@ -1,8 +1,0 @@
-disabled_rules:
-- line_length
-- force_cast
-- function_body_length
-- force_try
-
-excluded:
-- Pods
