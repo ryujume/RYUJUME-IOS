@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (5.0.0-rc.3)
+  - Kingfisher (5.9.0):
+    - Kingfisher/Core (= 5.9.0)
+  - Kingfisher/Core (5.9.0)
+  - SwiftyPickerPopover (6.6.6)
+  - TextFieldEffects (1.6.0)
+  - UIColor_Hex_Swift (5.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-beta.5)
+  - Kingfisher
+  - SwiftyPickerPopover
+  - TextFieldEffects
+  - UIColor_Hex_Swift (~> 5.1.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - SwiftyPickerPopover
+    - TextFieldEffects
+    - UIColor_Hex_Swift
+
+SPEC CHECKSUMS:
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  Kingfisher: ff98240aebb7302bdc4f1ecd701761030ce18b16
+  SwiftyPickerPopover: a402960a6687c911ffcb4e9fb282a1bc61186ab4
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+  UIColor_Hex_Swift: 8be7432edacb7fa91c78aa05ef3c30b66e4f9415
+
+PODFILE CHECKSUM: a81dd6986846f604e454ed3a4ed27fd574756302
+
+COCOAPODS: 1.8.4
